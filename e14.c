@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-long get_collatz_chain( long n );
+long get_collatz_chain(long n);
 
 int main() 
 {
@@ -12,7 +12,7 @@ int main()
     long i; 
     for (i = 2; i < 1000001; i++) {
         len = get_collatz_chain(i); 
-        if ( len > tmp ) { 
+        if (len > tmp) { 
             tmp = len; 
             final = i;
         }
@@ -21,7 +21,7 @@ int main()
     return 0; 
 }
 
-long get_collatz_chain( long n ) 
+long get_collatz_chain(long n) 
 {
     long count = 0; 
     while (n != 1) {

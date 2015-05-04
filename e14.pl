@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 my $final = 0; 
+my $final_chain = 0; 
 my $tmp = 0; 
 my $len = 0; 
 
@@ -12,9 +13,10 @@ for ( my $i = 1; $i <= 1000000; $i++ ) {
     if ( $len > $tmp ) {
         $tmp = $len; 
         $final = $i; 
+        $final_chain = $len; 
     }
 }
-print "$final\n"; 
+print "$final $final_chain\n"; 
 print get_collatz_chain(13), "\n"; 
 
 sub get_collatz_chain {
