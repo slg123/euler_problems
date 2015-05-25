@@ -25,6 +25,7 @@ public class Test {
                     reader.close();
                 }
             } catch (IOException e) {
+                System.out.println("Error.");
             }
         }
         BigInteger sum = BigInteger.valueOf(0);
@@ -38,6 +39,5 @@ public class Test {
             System.out.print(c); 
         }
         System.out.println(); 
-
     }
 }
