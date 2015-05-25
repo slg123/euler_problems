@@ -20,5 +20,6 @@ public class CollatzChain {
             }
         }
         System.out.println(end); 
+        System.out.println(tmp); 
     }
 }
