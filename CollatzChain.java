@@ -1,7 +1,7 @@
 public class CollatzChain {
     public static void main(String[] args) {
-        long end  = 0;
-        long tmp  = 0;
+        long end = 0;
+        long tmp = 0;
         for (int i = 1000000; i > 0; i--) {
             long chain = 0;
             long n = i; 
