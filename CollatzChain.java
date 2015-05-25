@@ -1,3 +1,5 @@
+import java.*;
+
 public class CollatzChain {
     public static void main(String[] args) {
         long end = 0;
@@ -6,13 +8,8 @@ public class CollatzChain {
             long chain = 0;
             long n = i; 
             while (n != 1) {
-                if (n%2 == 0 ){
-                    n = n/2;
-                    chain++;
-                } else {
-                    n = (n*3) + 1;
-                    chain++; 
-                }
+                n = n%2==0 ? n/2 : n*3+1; 
+                chain++;
             }
             if (chain > tmp) {
                 tmp = chain; 
