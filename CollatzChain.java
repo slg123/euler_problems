@@ -1,5 +1,3 @@
-import java.*;
-
 public class CollatzChain {
     public static void main(String[] args) {
         long end = 0;
