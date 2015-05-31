@@ -11,7 +11,7 @@ def make_amicable_list(n):
     if j == n and n != k:
         A.append(n)
 
-for i in range(10002):
+for i in range(10000):
     make_amicable_list(i)
 
 print sum(A)
