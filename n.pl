@@ -44,6 +44,5 @@ sub word_value {
     return $total;
 }
 
-my $t = 0;
 print sum(@name_scores); 
 
