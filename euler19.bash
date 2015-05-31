@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-
 i=1901
 num_sundays=0
 while [ $i -le 2000 ]; do
