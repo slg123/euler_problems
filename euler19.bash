@@ -7,12 +7,12 @@ while [ $i -le 2000 ]; do
     echo "working on year $i..."
     while [ $j -le 12 ]; do
         val=`cal $j $i | awk -F, '{sum += $1} END {print sum}'`
-        if [ $val -eq 46 ]; then
+        if [ $val -eq 46 -o $val -eq 75 ]; then
             let num_sundays=$num_sundays+1
         fi
-        if [ $val -eq 75 ]; then
-            let num_sundays=$num_sundays+1
-        fi
+        #if [ $val -eq 75 ]; then
+        #    let num_sundays=$num_sundays+1
+        #fi
         let j=$j+1
     done
     let i=$i+1
