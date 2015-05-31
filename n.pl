@@ -32,6 +32,11 @@ for (@sorted) {
     $posn++; 
 }
 
+#
+# input - a string
+# output - the sum of all letter values in the string, i.e. A=1, B=2, C=3.
+#          an input of "CAB" would return 6. 
+#
 sub word_value {
     my $word = shift;
     my @wordarr = split('', $word); 
