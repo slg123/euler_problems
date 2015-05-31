@@ -10,9 +10,6 @@ while [ $i -le 2000 ]; do
         if [ $val -eq 46 -o $val -eq 75 ]; then
             let num_sundays=$num_sundays+1
         fi
-        #if [ $val -eq 75 ]; then
-        #    let num_sundays=$num_sundays+1
-        #fi
         let j=$j+1
     done
     let i=$i+1
