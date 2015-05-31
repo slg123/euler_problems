@@ -11,11 +11,21 @@ use List::Util qw(max);
 
 my @tri = map { chomp; [split] } <>;
 
+my @nums = (); 
+
 for my $r (reverse 0..$#tri - 1) {
     for my $c (0..$#{$tri[$r]}) {
         $tri[$r][$c] += max ($tri[$r + 1][$c], $tri[$r + 1][$c + 1]);
+        push @nums, max($tri[$r+1][$c], $tri[$r+1][$c+1]); 
     }
 }
 print $tri[0][0];
+
+print "\n\n"; 
+
+for ( @nums ) {
+    print $_, "\n";
+}
+    
 
 __DATA__
