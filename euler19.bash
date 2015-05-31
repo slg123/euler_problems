@@ -3,7 +3,7 @@ y=1901
 num_sundays=0
 while [ $y -le 2000 ]; do
     m=1
-    echo "working on year $i..."
+    echo "working on year $y..."
     while [ $m -le 12 ]; do
         val=`cal $m $y | awk -F, '{sum += $1} END {print sum}'`
         if [ $val -eq 46 -o $val -eq 75 ]; then
