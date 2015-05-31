@@ -11,6 +11,7 @@
 
 use strict;
 use warnings;
+use List::Util qw(sum); 
 
 my @n = (); 
 my $f = 'names.txt';
@@ -44,8 +45,5 @@ sub word_value {
 }
 
 my $t = 0;
-for (@name_scores) {
-    $t += $_;
-}
-print $t, "\n"; 
+print sum(@name_scores); 
 
