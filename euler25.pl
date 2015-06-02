@@ -3,7 +3,6 @@
 use strict;
 use bigint;
 use Memoize;
-use List::Util qw(sum); 
 
 memoize 'fibonacci';
 memoize 'digitcount'; 
@@ -18,9 +17,10 @@ sub fibonacci {
 
 sub digitcount {
     my $n = shift;
-    my @s = split '', $n; 
+    my @s = split '', $n;
     return $#s+1; 
 }
+
 
 for (my $i=0; $i<10000; $i++) {
     my $n = fibonacci($i); 
