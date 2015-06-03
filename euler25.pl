@@ -23,9 +23,7 @@ sub digitcount {
 
 
 for (my $i=0; $i<10000; $i++) {
-    my $n = fibonacci($i); 
-    my $c = digitcount($n); 
-    if ($c == 1000) {
+    if (digitcount(fibonacci($i)) == 1000) {
         print "term : $i\n"; 
         exit; 
     }
