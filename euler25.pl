@@ -3,6 +3,7 @@
 use strict;
 use bigint;
 use Memoize;
+use threads;
 
 memoize 'fibonacci';
 memoize 'digitcount'; 
@@ -22,9 +23,11 @@ sub digitcount {
 }
 
 
-for (my $i=0; $i<10000; $i++) {
+for (my $i=0; $i<5000; $i++) {
     if (digitcount(fibonacci($i)) == 1000) {
         print "term : $i\n"; 
         exit; 
     }
 }
+
+
