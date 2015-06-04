@@ -22,14 +22,6 @@ sub digitcount {
     return $#s+1; 
 }
 
-sub check_digitcount {
-    my $n = shift;
-    if (digitcount(fibonacci($n) == 1000)) {
-        return 1;
-    }
-    return 0;
-}
-
 sub _main_ {
     for (my $i=0; $i<5000; $i++) {
         if (digitcount(fibonacci($i)) == 1000) {
