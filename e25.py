@@ -11,8 +11,7 @@ def fibonacci(n):
     return fibonacci(n-1) + fibonacci(n-2)
 
 for i in range(0,10000):
-    n = fibonacci(i)
-    if len(str(n)) == 1000:
+    if len(str(fibonacci(i))) == 1000:
         print("term: "+str(i))
         break
 
