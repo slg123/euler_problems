@@ -55,7 +55,7 @@ sub isNumeric {
 
 sub is_numeric {
     my $n = shift;
-    if ( is_whole_number($n) || is_integer($n) || is_float($n)) {
+    if (is_whole_number($n) || is_integer($n) || is_float($n)) {
         return TRUE;
     }
     return FALSE;
