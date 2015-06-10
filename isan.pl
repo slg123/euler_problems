@@ -47,7 +47,7 @@ sub test2 {
 
 sub test3 {
     for (@nums) {
-        if (easiest($_)) {
+        if (is_numeric_simple($_)) {
             print "$_ is numeric\n";
         } else {
             print "$_ is not numeric\n"; 
@@ -91,7 +91,7 @@ sub is_float {
 #
 # we should probably go with this, though... 
 #
-sub easiest {
+sub is_numeric_simple {
     my $n = shift;
     return 1, if $n += 0;
     return 0;
