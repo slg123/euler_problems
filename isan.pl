@@ -10,6 +10,9 @@ use warnings;
 #
 
 
+#
+# not my code.
+#
 use constant {
     SUCCESS       => 0,
     FAIL          => -1,
@@ -17,6 +20,7 @@ use constant {
     FALSE         => 0,
     NULL          => ""
 };
+# eonmc
 
 
 my @nums = ( 1, 23, "cat", 2.23, 1.096, 1.111, 23.333, "a", "burgundy" ); 
@@ -41,11 +45,13 @@ sub test2 {
     }
 }
 
+# not my code
 sub isNumeric {
     my $n = shift;
 # Return 1 if numeric
     return ( ( $n !~ /^[+|-]?\d+$/ ) && ( $n !~ /^[+|-]?\d*\.\d+$/ ) ? FALSE : TRUE);
 }
+# eonmc
 
 sub is_numeric {
     my $n = shift;
