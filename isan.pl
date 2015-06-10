@@ -6,6 +6,11 @@ use warnings;
 # comparing two functions isNumeric and is_numeric
 # my code is the function with three helper functions. 
 # not sure if that's the way to go, what do you think?
+# whole, float and integer check lifted from:
+#
+# http://www.perl.com/doc/FMTEYEWTK/is_numeric.html
+#
+
 
 use constant {
     SUCCESS       => 0,
