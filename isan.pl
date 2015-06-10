@@ -45,6 +45,16 @@ sub test2 {
     }
 }
 
+sub test3 {
+    for (@nums) {
+        if (easiest($_)) {
+            print "$_ is numeric\n";
+        } else {
+            print "$_ is not numeric\n"; 
+        }
+    }
+}
+
 # not my code
 sub isNumeric {
     my $n = shift;
@@ -77,10 +87,22 @@ sub is_float {
     return 0;
 }
 
+
+#
+# we should probably go with this, though... 
+#
+sub easiest {
+    my $n = shift;
+    return 1, if $n += 0;
+    return 0;
+}
+
 sub _main_ {
     test1;
     print "\n"x3;
     test2;
+    print "\n"x3;
+    test3;
 }
 
 _main_; 
