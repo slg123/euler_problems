@@ -3,6 +3,8 @@
 use strict;
 use warnings;
 
+# Graham Cumming's version of Turing's Vigenere cypher.
+
 my @alpha = split('', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ');
 
 my %frequencies = ( 'A' => 84, 'B' => 23, 'C' => 21, 'D' => 46, 'E' => 116,
