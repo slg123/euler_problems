@@ -12,5 +12,6 @@ while [ $i -lt 10000 ]; do
     ping -c 1 $GATEWAY
     echo "sleeping $random_sleep seconds"
     sleep $random_sleep
+    let i=$i+1
 done
 
