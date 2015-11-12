@@ -17,11 +17,11 @@ int main(void) {
         printf("%c %c\n", s1[i], s2[i]); 
     }
 
-    char *dest = (char *)malloc(sizeof(s1));
+    char *dest = (char *)malloc(strlen(s1)); 
 
     strcpy(s1, s2);
 
-    //for (i=1; i<=11; i++) { off by 1
+    // for (i=1; i<=11; i++) { off by 1
     for (i=0; i<=len; i++) {
         dest[i] = s1[i];
         printf("%c %c\n", dest[i], s1[i]); 
@@ -47,14 +47,4 @@ char *concat(const char *s1, const char *s2) {
     strcat(result, s2); 
     return result;
 }
-
-
-
-
-
-
-
-
-
-
 
