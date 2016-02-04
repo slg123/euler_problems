@@ -1,8 +1,7 @@
 #include <iostream>
 
 using namespace std;
-void display(); 
-void displayNewArray();
+void display(int a[4][4]); 
 void rotate(); 
 
 int ar[4][4] = {{ 0, 1, 2, 3 },
@@ -13,28 +12,17 @@ int ar[4][4] = {{ 0, 1, 2, 3 },
 int newar[4][4] = {{}, {}, {}, {}};
 
 int main() {
-    display();
+    display(ar);
     rotate();
-    displayNewArray();
+    display(newar); 
     return 0; 
 }
 
-void display() {
+void display(int a[4][4]) {
     int i, j;
     for (i=0; i<=3; i++) {
         for (j=0; j<=3; j++) {
-            cout << ar[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
-}
-
-void displayNewArray() {
-    int i, j;
-    for (i=0; i<=3; i++) {
-        for (j=0; j<=3; j++) {
-            cout << newar[i][j] << " ";
+            cout << a[i][j] << " ";
         }
         cout << endl;
     }
