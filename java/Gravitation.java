@@ -49,10 +49,10 @@ public class Gravitation {
     }
 
     public static double getGravity(String planet) {
-        double d = planet_SolarDistance.get(planet); 
+        double G = 6.67300E-11;  // Gravitational constant
         double M = 1988500.0;    // Mass of the Sun
+        double d = planet_SolarDistance.get(planet); 
         double m = planet_Mass.get(planet); 
-        double G = 6.67300E-11; 
         double gravitation = (G * (M * m)) / (d * d);
         return gravitation;
     }
