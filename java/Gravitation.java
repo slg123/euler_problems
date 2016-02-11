@@ -53,8 +53,7 @@ public class Gravitation {
         double M = 1988500.0;    // Mass of the Sun
         double d = planet_SolarDistance.get(planet); 
         double m = planet_Mass.get(planet); 
-        double gravitation = (G * (M * m)) / (d * d);
-        return gravitation;
+        return (G * (M * m)) / (d * d);
     }
 }
 
