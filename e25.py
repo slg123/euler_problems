@@ -12,6 +12,6 @@ def fibonacci(n):
 
 for i in range(0,10000):
     if len(str(fibonacci(i))) == 1000:
-        print("term: "+str(i))
+        print("the index of the first term to contain 1000 digits: "+str(i))
         break
 
