@@ -27,8 +27,8 @@ public class Gravitation {
         planet_Mass.put("Neptune", 102.0);
         planet_Mass.put("Pluto", 0.0146);
 
-        double gEarth = getGravity("Earth"); 
-        System.out.println("\nEarth gravity: " + gEarth + "\n"); 
+        //double gEarth = getGravity("Earth"); 
+        //System.out.println("\nEarth gravity: " + gEarth + "\n"); 
 
         for (String key : planet_Mass.keySet()) {
             double g = getGravity(key);
@@ -36,6 +36,8 @@ public class Gravitation {
         }
 
         printMap(planet_Mass); 
+
+        printMap(planet_SolarDistance); 
 
     }
 
