@@ -1,5 +1,8 @@
 #!/usr/bin/perl -w
 
+# cals.pl - simple calorie calculator that reads in a text datafile
+#           and calculates calories, protein and fat totals. 
+
 use strict;
 
 my @quantities;
