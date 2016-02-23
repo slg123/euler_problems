@@ -13,12 +13,12 @@ my @fat;
 my $filename = 'cals.txt'; 
 open my $fh, '<', $filename;    
 while (<$fh>) {
-    my @data = split ' '; 
+    my @column = split ' '; 
     next if $_ =~ /^#/; 
-    push @quantities, $data[2] if defined $data[2]; 
-    push @calories,   $data[5] if defined $data[5]; 
-    push @protein,    $data[6] if defined $data[6]; 
-    push @fat,        $data[7] if defined $data[7]; 
+    push @quantities, $column[2] if defined $column[2]; 
+    push @calories,   $column[5] if defined $column[5]; 
+    push @protein,    $column[6] if defined $column[6]; 
+    push @fat,        $column[7] if defined $column[7]; 
 }
 
 my $total_calories;
