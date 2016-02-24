@@ -5,7 +5,7 @@ protein = []
 fat = []
 
 items = 0
-for line in open('cals.txt'):
+for line in open('cals_python.txt'):
     if line.startswith('#'):
         continue
 
