@@ -18,5 +18,3 @@ for line in open('cals.txt'):
 print "total calories: " + str(sum(calories))
 print "total protein: " + str(sum(protein)) + "g"
 print "total fat: " + str(sum(fat)) + "g"
-
-

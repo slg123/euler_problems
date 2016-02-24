@@ -1,19 +1,23 @@
-# Tuesday                     cals  prot fat
-chocolate_milk - 1 serving  -  140  13   4.5
-coffee         - 1 serving  -   70   6   2
-turkey         - 5 slices   -   30   4   1.5
-bread          - 2 slices   -   70   2   0.5
-cheese         - 1 slice    -   25   4   0
-mayo           - 1 serving  -   30   0   5
-turkey         - 3 slices   -   30   4   1.5
-bread          - 2 slices   -   70   2   0.5
-cheese         - 1 slice    -   25   4   0
-mayo           - 1 serving  -   30   0   5
-almonds        - 2 servings -  160   5  13
-wings          - 3 items    -   55   5   4
-fried_rice     - 1 serving  -  330  12  12
-chicken_curry  - 1 serving  -  391  18  22
-turkey         - 3 slices   -   30   4   1.5
-bread          - 2 slices   -   70   2   0.5
-cheese         - 1 slice    -   25   4   0
-mayo           - 1 serving  -   30   0   5
+# Tuesday                     cals  prot    fat
+#chocolate_milk - 1 serving  -  140    13    4.5
+#coffee         - 1 serving  -   70     6    2
+#turkey         - 5 slices   -   30     4    1.5
+#bread          - 2 slices   -   70     2    0.5
+#cheese         - 1 slice    -   25     4    0
+#mayo           - 1 serving  -   30     0    5
+#turkey         - 3 slices   -   30     4    1.5
+#bread          - 2 slices   -   70     2    0.5
+#cheese         - 1 slice    -   25     4    0
+#mayo           - 1 serving  -   30     0    5
+#almonds        - 2 servings -  160     5   13
+#wings          - 3 items    -   55     5    4
+#fried_rice     - 1 serving  -  330    12   12
+#chicken_curry  - 1 serving  -  391    18   22
+#turkey         - 3 slices   -   30     4    1.5
+#bread          - 2 slices   -   70     2    0.5
+#cheese         - 1 slice    -   25     4    0
+#mayo           - 1 serving  -   30     0    5
+#cheese         - 1 slice    -   25     4    0
+#crackers       - 4 crackers -   14     0    0 
+# Wednesday                   cals  prot    fat
+creamer        - 2 tbsp     -   35     0    1.5
