@@ -20,19 +20,32 @@
 #mayo            - 1 serving  -   30     0    5
 #cheese          - 1 slice    -   25     4    0
 #crackers        - 4 crackers -   14     0    0 
-#monster         - 1 can      -  200     0    0
+#monster         - 1 can      -  210     0    0
 # Tue END
 
-# Daily totals: 2612 calories, 146 g protein, 113 g fat
+# Daily totals: 2622 calories, 146 g protein, 113 g fat
 
 # Wed BEGIN
-creamer         - 2 tbsp     -   35     0    1.5
-turkey_bacon    - 3 strips   -   40     6    1.5
-egg_whites      - 4 servings -   25     5    0
-egg             - 1 item     -   70     6    5
-coffee          - 2 cups     -    2     0    0
-turkey          - 5 slices   -   30     4    1.5
-bread           - 2 slices   -   70     2    0.5
-cheese          - 1 slice    -   25     4    0
-mayo            - 2 servings -   30     0    5
-monster         - 1 can      -  200     0    0
+#creamer         - 2 tbsp     -   35     0    1.5
+#turkey_bacon    - 3 strips   -   40     6    1.5
+#egg_whites      - 4 servings -   25     5    0
+#egg             - 1 item     -   70     6    5
+#coffee          - 2 cups     -    2     0    0
+#turkey          - 5 slices   -   30     4    1.5
+#bread           - 2 slices   -   70     2    0.5
+#cheese          - 1 slice    -   25     4    0
+#mayo            - 2 servings -   50     0    5
+#monster         - 1 can      -  210     0    0
+#chocolate_milk  - 1 cup      -  140    13    4.5
+#almonds         - 1 serving  -  160     5   13
+#brussel_sprouts - 2 cups     -   38     0    0 
+#black_beans     - 2 cups     -  220    14    1
+#cauliflower     - 1 head     -  100     0   12
+#almonds         - 1 serving  -  160     5   13
+#cheese          - 2 slices   -   25     4    0
+#crackers        - 5 crackers -   14     0    0 
+#mayo            - 1 serving  -   50     0    5
+#tuna            - 2 servings -   50    12    0.5 
+# Wed END
+
+# Daily totals: 2335 calories, 155 g protein, 81.5 g fat

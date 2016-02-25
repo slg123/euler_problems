@@ -11,7 +11,7 @@ my @protein;
 my @fat;
 
 chomp(my $weekday = `date +%a`);  # Sun Mon Tue Wed Thu Fri Sat
-my $daily_record_end = $weekday." END"; 
+my $daily_record_end = "# ".$weekday." END"; 
 
 my $filename = 'cals.txt'; 
 
