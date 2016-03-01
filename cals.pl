@@ -10,12 +10,9 @@ my @calories;
 my @protein;
 my @fat;
 
-chomp(my $weekday = `date +%a`);  # Sun Mon Tue Wed Thu Fri Sat
-my $daily_record_end = "# ".$weekday." END"; 
-
 my $filename = 'cals.txt'; 
 
-sub get_daily_data {
+sub get_data {
     open my $fh, '<', $filename or die "can't open $! for reading.";    
 
     while (<$fh>) {
@@ -27,7 +24,7 @@ sub get_daily_data {
         push @protein,    $column[6] if defined $column[6]; 
         push @fat,        $column[7] if defined $column[7]; 
 
-        last if $_ =~ /$daily_record_end/; 
+        #last if $_ =~ /$daily_record_end/; 
     }
 }
 
@@ -35,7 +32,7 @@ my $total_calories;
 my $total_protein;
 my $total_fat;
 
-sub calc_daily_calories {
+sub calc_calories {
     for my $i (0 .. $#quantities) {
         $total_calories += $quantities[$i] * $calories[$i];
         $total_protein  += $quantities[$i] * $protein[$i];
@@ -43,13 +40,26 @@ sub calc_daily_calories {
     }
 }
 
-get_daily_data(); 
-calc_daily_calories(); 
+sub print_totals {
+    print "total calories: ".$total_calories."\n"; 
+    print "total protein:  ".$total_protein."\n"; 
+    print "total fat:      ".$total_fat."\n"; 
+}
 
-print "total calories: ".$total_calories."\n"; 
-print "total protein:  ".$total_protein."\n"; 
-print "total fat:      ".$total_fat."\n"; 
+sub update_datafile {
+    chomp(my $weekday = `date +%a`);  # Sun Mon Tue Wed Thu Fri Sat
+    my $daily_record_end = "# ".$weekday." END"; 
+    open my $fh, '>>', $filename or die "can't open $! for appending."; 
+    print $fh $daily_record_end; 
+    print $fh "\n# Daily totals: $total_calories calories, $total_protein g protein, $total_fat g fat"; 
+    close $fh;
+}
 
-open my $fh, '>>', $filename or die "can't open $! for appending."; 
-print $fh "# Daily totals: $total_calories calories, $total_protein g protein, $total_fat g fat"; 
-close $fh;
+sub main() {
+    get_data();
+    calc_calories(); 
+    print_totals();
+    update_datafile(); 
+}
+
+main(); 
