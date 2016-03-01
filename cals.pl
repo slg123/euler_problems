@@ -10,6 +10,15 @@ my @calories;
 my @protein;
 my @fat;
 
+#--------------------------------------------------------------
+# format (cals.txt):
+#  item_name  - quantity quantity_type - calories protein fat
+# 
+# example:
+# chocolate_milk  - 1 serving  -  140    13    4.5
+# coffee          - 1 serving  -   70     6    2
+# 
+#--------------------------------------------------------------
 my $filename = 'cals.txt'; 
 
 sub get_data {

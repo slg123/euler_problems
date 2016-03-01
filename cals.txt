@@ -75,34 +75,17 @@
 #candy            - 8 pieces  -    44     0    2
 #Sat END
 # Daily totals: 2992 calories, 185 g protein, 99 g fat
-#Sun BEGIN
-#carm_macchiatto  - 1 drink    -  300    13    8
-#egg              - 2 items    -   70     6    5
-#egg_whites       - 3 servings -   25     5    0
-#mozzarella       - 1 srv      -   80     8    5
-#tomato           - 1 srv      -   22     0    0
-#fritos           - 2 srvs     -  160     2   10
-#orange_juice     - 1 srv      -  120     0    0 
-#cheese           - 2 slices   -   25     4    0
+#Mon BEGIN
+#chicken_lunchmt  - 2 srv      -   50    10    1
+#milk             - 1 ea       -  130     8    5 
+#cheese           - 1 slice    -   25     4    0
 #bread            - 2 slices   -   70     2    0.5
 #mayo             - 1 serving  -   50     0    5
-#butter           - 2 servings -  102     0   12
-#monster          - 1 can      -  210     0    0
-#fritos           - 1 srvs     -  160     2   10
-#pbj              - 1 sandwich -  200     5    8
+#fritos           - 2 srvs     -  160     2   10
+#peanut_butter    - 1 srv      -  180     7   15
+#protein_shake    - 2 scoops   -  130    27    1.5 
 #milk             - 1 ea       -  130     8    5 
-#Sun END
-#Mon BEGIN
-chicken_lunchmt  - 2 srv      -   50    10    1
-milk             - 1 ea       -  130     8    5 
-cheese           - 1 slice    -   25     4    0
-bread            - 2 slices   -   70     2    0.5
-mayo             - 1 serving  -   50     0    5
-fritos           - 2 srvs     -  160     2   10
-peanut_butter    - 1 srv      -  180     7   15
-protein_shake    - 2 scoops   -  130    27    1.5 
-milk             - 1 ea       -  130     8    5 
-monster          - 1 can      -  210     0    0
-burrito_bowl     - 1 burrito  -  950    74.5 40.5
+#monster          - 1 can      -  210     0    0
+#burrito_bowl     - 1 burrito  -  950    74.5 40.5
 # Mon END
 # Daily totals: 2495 calories, 183.5 g protein, 96.5 g fat
