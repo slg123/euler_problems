@@ -18,7 +18,6 @@ int main() {
 
     cout << binary; 
 
-
     // mask size of fourth octet
     int fourth_octet_size = 8;
 

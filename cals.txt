@@ -129,3 +129,8 @@ egg               - 3 items    -  70     6    5
 orange_juice      - 1 serving  - 110     0    0
 wheat_toast       - 1 slice    -  80     4    0.5
 coffee_w_milk     - 1 cup      -  24     1    0
+wheat_toast       - 2 slice    -  80     4    0.5
+turkey            - 4 oz       -  50     9    1
+cheese            - 1 slice    -   25     4    0
+mayo              - 1 serving  -   50     0    5
+milk              - 1 ea       -  130     8    5 
