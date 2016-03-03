@@ -35,6 +35,7 @@ void display(char a[3][3]) {
         cout << endl;
     }
     cout << endl;
+    sleep(1); 
 }
 
 void play_animation() {
@@ -57,15 +58,11 @@ void play_animation() {
     for (int i=0; i<3; i++) {
         clear_screen(); 
         display(j);
-        sleep(1);
     }
 
     display(k); 
-    sleep(1); 
     display(l);
-    sleep(1); 
     display(m);
-    sleep(1); 
 
     cout << "what's that spell?" << endl;
     sleep(1); 
