@@ -36,6 +36,9 @@ int main() {
     fill_octet(first_octet_size, first_octet, 1); 
     show_octet(first_octet_size, first_octet); 
 
+    // test badval
+    fill_octet(first_octet_size, first_octet, 2); 
+
     return 0;
 }
 
@@ -45,7 +48,7 @@ void fill_octet(int size, int octet[], int value) {
             octet[i] = value;
         }
     } else {
-        cout << "invalid value." << endl;
+        cout << "invalid value: " << value << endl;
     }
 }
 
