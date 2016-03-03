@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bitset>
 
 using namespace std;
 
@@ -11,6 +12,12 @@ int third_octet[16] = {};
 int fourth_octet[8] = {}; 
 
 int main() {
+
+    int test_num = 93;
+    std::string binary = std::bitset<8>(test_num).to_string(); 
+
+    cout << binary; 
+
 
     // mask size of fourth octet
     int fourth_octet_size = 8;
