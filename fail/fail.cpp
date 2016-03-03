@@ -23,7 +23,7 @@ void clear_screen() {
 }
 
 void open_game_window() {
-    cout << "this would open the game window. sdl or gl." << endl;
+    cout << "this would open the sdl or opengl game window." << endl;
     cout << "or maybe not. it's sunny outside. i think i'll go for a walk instead." << endl;
 }
 
