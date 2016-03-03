@@ -109,17 +109,23 @@
 # Tue END
 # Daily totals: 2675 calories, 187 g protein, 113 g fat
 # Wed BEGIN
-choc_milk        - 1 cup      -  170     8    3
-protein_bar      - 1 item     -  380    26   19  
-carm_macchiatto  - 1 venti    -  300    13    8
-monster          - 1 can      -  210     0    0
-cheese           - 1 slice    -   25     4    0
-bread            - 2 slices   -   70     2    0.5
-mayo             - 1 serving  -   50     0    5
-fritos           - 2 srvs     -  160     2   10
-chicken_lunchmt  - 2 srv      -   50    10    1
-pork_chop        - 1 small    -  160    17    9
-burrito_bowl     - 1 bowl     -  800    90   50
-chk_thigh        - 1 thigh    -  206    28   10
+#choc_milk        - 1 cup      -  170     8    3
+#protein_bar      - 1 item     -  380    26   19  
+#carm_macchiatto  - 1 venti    -  300    13    8
+#monster          - 1 can      -  210     0    0
+#cheese           - 1 slice    -   25     4    0
+#bread            - 2 slices   -   70     2    0.5
+#mayo             - 1 serving  -   50     0    5
+#fritos           - 2 srvs     -  160     2   10
+#chicken_lunchmt  - 2 srv      -   50    10    1
+#pork_chop        - 1 small    -  160    17    9
+#burrito_bowl     - 1 bowl     -  800    90   50
+#chk_thigh        - 1 thigh    -  206    28   10
+#fruit            - 1 cup      -  100     1    0
 # Wed END
-# Daily totals: 2861 calories, 214 g protein, 127 g fat
+# Daily totals: 2961 calories, 215 g protein, 127 g fat
+chicken_sausage   - 3 servings -  90     8    5
+egg               - 3 items    -  70     6    5
+orange_juice      - 1 serving  - 110     0    0
+wheat_toast       - 1 slice    -  80     4    0.5
+coffee_w_milk     - 1 cup      -  24     1    0
