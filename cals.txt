@@ -124,13 +124,81 @@
 #fruit            - 1 cup      -  100     1    0
 # Wed END
 # Daily totals: 2961 calories, 215 g protein, 127 g fat
-chicken_sausage   - 3 servings -  90     8    5
-egg               - 3 items    -  70     6    5
-orange_juice      - 1 serving  - 110     0    0
-wheat_toast       - 1 slice    -  80     4    0.5
-coffee_w_milk     - 1 cup      -  24     1    0
-wheat_toast       - 2 slice    -  80     4    0.5
-turkey            - 4 oz       -  50     9    1
-cheese            - 1 slice    -   25     4    0
-mayo              - 1 serving  -   50     0    5
-milk              - 1 ea       -  130     8    5 
+#chicken_sausage   - 3 servings -  90     8    5
+#egg               - 3 items    -  70     6    5
+#orange_juice      - 1 serving  - 110     0    0
+#wheat_toast       - 1 slice    -  80     4    0.5
+#coffee_w_milk     - 1 cup      -  24     1    0
+#wheat_toast       - 2 slice    -  80     4    0.5
+#turkey            - 4 oz       -  50     9    1
+#cheese            - 1 slice    -  25     4    0
+#mayo              - 1 serving  -  50     0    5
+#milk              - 2 ea       - 130     8    5 
+#steak             - 1 steak    - 345    51   16
+#brussels_sprouts  - 1 srv      - 100     1    6
+#mashed_potatoes   - 2 srv      - 250     5   10
+#protein_bar       - 1 item     - 380    26   19  
+# Thu END
+# Daily totals: 2714 calories, 199 g protein, 111.5 g fat
+# Fri BEGIN
+#bacon             - 4 slices   -  90      5    7
+#eggs              - 2 items    -  70      6    5
+#egg_whites        - 5 tbsp     -  25      5    0
+#choc_milk         - 1 cup      - 170      8    3
+#coffee_w_milk     - 2 cups     -  24      1    0
+#grapefruit        - 1 half     -  50      0    0
+#berries           - 1 cup      -  85      0    0
+#wheat_toast       - 2 slice    -  80      4    0.5
+#turkey            - 4 srv      -  50      9    1
+#cheese            - 1 slice    -  25      4    0
+#mayo              - 1 serving  -  50      0    5
+#milk              - 2 ea       - 130      8    5 
+#turkey            - 1 srv      -  50      9    1
+#tilapia           - 4 filets   - 120     18    5
+#pasta             - 1 cup      - 220      8    1.5
+#egg               - 1 item     -  70      6    5
+#milk              - 2 ea       - 130      8    5 
+# Fri END
+# Daily totals: 2753 calories, 242 g protein, 98.5 g fat
+# Sat BEGIN
+#carm_macchiatto  - 1 venti    -  300    13    8
+#bcburger         - 1 burger   -  810    53   42
+#tostadas_guac    - 1 srv      -  600     8   30
+#kids_shake       - 1 shake    -  600    10   40
+#dunkin_coffee    - 1 large    -  100     8    0
+#protein_bar      - 1 item     -  380    26   19  
+#turkey           - 3 srv      -  50      9    1
+#cheese           - 1 slice    -  25      4    0
+#tuna             - 3 servings -  50     12    0.5 
+#mayo             - 1 serving  -  50      0    5
+#crackers         - 6 crackers -  14      0    0 
+#choc_milk        - 1 cup      - 170      8    3
+#tostadas_guac    - 1 srv      - 300      4   20
+# Sat END
+# Daily totals: 3719 calories, 197 g protein, 171.5 g fat
+# Sun BEGIN
+#coffee_w_milk     - 2 cups     -  24      1     0
+#wings             - 6 wings    -  89      7.5   6 
+#crawfish          - 1 srv      - 300     30    15 
+#shrimp            - 1 srv      - 100     16     1
+#potato            - 1 srv      -  60      1     1
+#corn              - 1 srv      -  60      1     1
+#sausage           - 2 links    - 270      9    20
+#protein_bar       - 1 bar      - 230     21     9
+#protein_shake     - 2 scoops   - 130     27    1.5 
+#grapefruit        - 1 half     -  50      0    0
+#berries           - 1 cup      -  85      0    0
+#choc_milk         - 1 cup      - 170      8    3
+# Sun END
+# Daily totals: 2437 calories, 196 g protein, 109 g fat
+# Mon BEGIN
+choc_milk          -  .25 cup     -  170      8    3
+coffee             - 1    cup     -   20      0    0
+bcburger           -  .5  burger  -  810     53   42
+egg                - 1    item    -   70      6    5
+protein_bar        - 1    bar     -  380     27   18
+milk               - 1.5  ea      -  130      8    5 
+burrito            - 1    burrito - 1565     64   27
+milk               - 1.5  ea      -  130      8    5 
+# Mon END
+# Daily totals: 2872.5 calories, 149.5 g protein, 86.75 g fat
