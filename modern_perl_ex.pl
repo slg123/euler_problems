@@ -26,8 +26,13 @@ sub get_all_addresses {
     return @arr; 
 }
 
-
 my @n = get_all_addresses;
 for my $i (@n) {
     print $i, "\n"; 
 }
+
+my @parsed_address = split(' ', $addresses{'Leonardo'});
+print $parsed_address[2], "\n"; 
+print $parsed_address[1], "\n"; 
+print $parsed_address[0], "\n"; 
+
