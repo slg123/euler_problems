@@ -232,3 +232,7 @@
 #chips              - 2.5 srv      - 150       2    8
 # Wed END
 # Daily totals: 3414.5 calories, 229.1 g protein, 178.5 g fat
+# Thu BEGIN
+eggs               - 2   eggs     -  70       6    5
+bacon              - 4 slices     -  90       5    7
+potatoes           - 6 srv        -  56       0    1
