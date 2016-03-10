@@ -236,3 +236,7 @@
 eggs               - 2   eggs     -  70       6    5
 bacon              - 4 slices     -  90       5    7
 potatoes           - 6 srv        -  56       0    1
+pasta              - 1 cup        - 220       8    1.5
+marinara           - 2 srv        -  60       2    2
+chicken_breast     - 1 srv        - 231      43    5
+coffee_and_creamer - 3 cups       -  35       0    1.5
