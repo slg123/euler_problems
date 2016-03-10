@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-sentence = 'this is a sentence with quite a few letters in it, look, a zebra!'
+sentence = 'this is a sentence with quite a few letters in it, xenophobic zebra!'
 absent = []
 for i in alphabet:
     if i in alphabet and i not in sentence:
