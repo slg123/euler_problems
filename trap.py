@@ -14,5 +14,4 @@ def integrate(f, a, b, steps, method):
 def f1(x):
     return 2*x
 
-x = integrate(f1, 1, math.pi, 100, trapezium)
-print x
+print integrate(f1, 1, math.pi, 100, trapezium)
