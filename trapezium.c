@@ -4,8 +4,10 @@
 
 #define _USE_MATH_DEFINES
 #define max_in 501
-#define vmin 0.0
-#define vmax 1.0
+//#define vmin 0.0
+//#define vmax 1.0
+#define vmin 1.0
+#define vmax M_PI
 #define ME 2.7182818284590453454E0
 
 int main() {
@@ -13,16 +15,13 @@ int main() {
     FILE *output;
     output=fopen("integral.dat", "w"); 
 
-    //float a = 1.00;
-    //float b = M_PI;
     float result;
     float trapez(int no, float min, float max); 
     float f(float); 
 
     int i;
     for (i=3; i<=max_in; i+=2) {
-        //result = trapez(i, vmin, vmax);
-        result = trapez(i, a, b);
+        result = trapez(i, vmin, vmax);
         fprintf(output, "%i\t%e\t\n", i, fabs(result-1+1/ME)); 
     }
 
