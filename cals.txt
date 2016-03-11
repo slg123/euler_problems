@@ -233,7 +233,7 @@
 # Wed END
 # Daily totals: 3414.5 calories, 229.1 g protein, 178.5 g fat
 # Thu BEGIN
-eggs               - 2   eggs     -  70       6    5
+eggs               - 3   eggs     -  70       6    5
 bacon              - 4 slices     -  90       5    7
 potatoes           - 6 srv        -  56       0    1
 pasta              - 1 cup        - 220       8    1.5
@@ -243,5 +243,7 @@ coffee_and_creamer - 4 cups       -  35       0    1.5
 protein_bar        - 1   bar      -  380     27   18
 crackers           - 6 crackers   -  14       0    0 
 cheese             - 4 slices     -  25       4    0
+pasta              - 1 cup        - 220       8    1.5
+bacon              - 2 slices     -  90       5    7
 # Thu END
-# Daily totals: 2111 calories, 130 g protein, 78.5 g fat
+# Daily totals: 2581 calories, 154 g protein, 99 g fat

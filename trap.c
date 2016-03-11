@@ -4,10 +4,8 @@
 
 #define _USE_MATH_DEFINES
 #define max_in 501
-//#define vmin 0.0
-//#define vmax 1.0
-#define vmin 1.0
-#define vmax M_PI
+#define vmin 0.0
+#define vmax 1.0
 #define ME 2.7182818284590453454E0
 
 int main() {
