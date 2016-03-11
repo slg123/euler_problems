@@ -241,3 +241,7 @@ marinara           - 2 srv        -  60       2    2
 chicken_breast     - 1 srv        - 231      43    5
 coffee_and_creamer - 4 cups       -  35       0    1.5
 protein_bar        - 1   bar      -  380     27   18
+crackers           - 6 crackers   -  14       0    0 
+cheese             - 4 slices     -  25       4    0
+# Thu END
+# Daily totals: 2111 calories, 130 g protein, 78.5 g fat

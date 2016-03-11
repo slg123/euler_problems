@@ -19,13 +19,11 @@ int main() {
     FILE *fp;
     fp=fopen("trapezium.txt", "w"); 
 
-
     float num_rectangles;
     printf("Enter num rectangles: "); 
     scanf("%f", &n); 
 
     h = (b-a) / n;  // step
-
     sum = (0.5 * h) * (f(a) + f(b));
 
     printf("%f\n", sum); 
