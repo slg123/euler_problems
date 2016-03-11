@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+# integrate 2xdx over the region from 1 to pi
+
 from fractions import Fraction
 import math
 
