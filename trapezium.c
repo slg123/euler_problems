@@ -6,7 +6,7 @@
 
 float f(float); 
 
-float a = 1;
+float a = 1.00;
 float b = M_PI;
 float x;
 float h;
@@ -28,12 +28,18 @@ int main() {
 
     sum = (0.5 * h) * (f(a) + f(b));
 
+    printf("%f\n", sum); 
     fprintf(fp, "%f\n", sum); 
 
+    int count=0;
     for (i=1; i<n; i++) {
         sum = sum + h * f(a + (i * h));
-        fprintf(fp, "%f\n", sum); 
+        if (count % 1000 == 0) { 
+            fprintf(fp, "%f\n", sum); 
+        }
+        count++; 
     }
+    printf("integral value: %f\n", sum); 
     fprintf(fp, "integral value: %f\n", sum); 
 
     fclose(fp); 
