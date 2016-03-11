@@ -3,50 +3,49 @@
 #include <stdio.h>
 
 #define _USE_MATH_DEFINES
-
-float f(float); 
-
-float a = 1.00;
-float b = M_PI;
-float x;
-float h;
-float sum;
-int n;
-int i;
+#define max_in 501
+#define vmin 0.0
+#define vmax 1.0
+#define ME 2.7182818284590453454E0
 
 int main() {
 
-    FILE *fp;
-    fp=fopen("trapezium.txt", "w"); 
+    FILE *output;
+    output=fopen("integral.dat", "w"); 
 
-    float num_rectangles;
-    printf("Enter num rectangles: "); 
-    scanf("%f", &n); 
+    //float a = 1.00;
+    //float b = M_PI;
+    float result;
+    float trapez(int no, float min, float max); 
+    float f(float); 
 
-    h = (b-a) / n;  // step
-    sum = (0.5 * h) * (f(a) + f(b));
-
-    printf("%f\n", sum); 
-    fprintf(fp, "%f\n", sum); 
-
-    int count=0;
-    for (i=1; i<n; i++) {
-        sum = sum + h * f(a + (i * h));
-        if (count % 1000 == 0) { 
-            fprintf(fp, "%f\n", sum); 
-        }
-        count++; 
+    int i;
+    for (i=3; i<=max_in; i+=2) {
+        //result = trapez(i, vmin, vmax);
+        result = trapez(i, a, b);
+        fprintf(output, "%i\t%e\t\n", i, fabs(result-1+1/ME)); 
     }
-    printf("integral value: %f\n", sum); 
-    fprintf(fp, "integral value: %f\n", sum); 
 
-    fclose(fp); 
+    fclose(output); 
 
     return 0;
 }
 
 float f(float x) {
-    float value;
-    value = 2*(x*x)+x;
-    return value;
+    return (exp(-x));
 }
+
+float trapez(int no, float min, float max) {
+    int n;
+    float interval, sum=0.0, x; 
+
+    interval = ((max-min) / (no-1)); 
+    for (n=2; n<no; n++) {
+        x = interval * (n-1); 
+        sum += f(x)*interval;
+    }
+    sum += 0.5 * (f(min) + f(max)) * interval; 
+
+    return sum;
+}
+
