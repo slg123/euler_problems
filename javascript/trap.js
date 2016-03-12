@@ -2,6 +2,7 @@
 //
 // trapezoidal integration in javascript.
 //
+// currently borked. 
 //
 //----------------------------------------------
 function trapezium(f, x, h) {
