@@ -15,8 +15,10 @@ function f(x) {
 
 function integrate(f, a, b, steps, method) {
     var h = (b-a) / steps;
+    WScript.Echo(steps); 
     for (i=1; i<=steps; i++) {
         var ival = h * sum(method(f, a+i*h, h));
+        WScript.Echo(sum(method(f, a+i*h, h))); 
     }
     return ival;
 }
