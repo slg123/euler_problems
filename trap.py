@@ -10,7 +10,9 @@ def trapezium(f,x,h):
 
 def integrate(f, a, b, steps, method):
     h = (b-a) / steps
+    print h
     ival = h * sum(method(f, a+i*h, h) for i in range(steps))
+    print ival
     return ival
 
 def f1(x):
