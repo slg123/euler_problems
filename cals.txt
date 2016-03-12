@@ -248,20 +248,25 @@
 # Thu END
 # Daily totals: 2581 calories, 154 g protein, 99 g fat
 # Fri BEGIN
-carm_macchiatto    - 1 venti      - 300      13    8
-croissant          - 1 pastry     - 240       5   12
-prosciutto_chz_brd - 1 container  - 280      19   12
-sunchips           - 1 srv        - 150       2    7
-milk               - 2 cups       - 120      13    4.5
-chk_lunchmeat      - 2 srv        -  60      10    1
-cheese             - 1 slice      -  25       4    0
-bread              - 2 slices     -  70       2    1
-protein_shake      - 2 scoops     - 130      27    1.5 
-milk               - 1 cup        - 120      13    4.5
-banana             - 1 banana     - 105       1    0
-bread              - 2 slices     -  70       2    1
-cheese             - 2 slices     -  25       4    0
-butter             - 1 tbsp       - 102       0   12  
-mayo               - 1 serving    -  50       0    5
+#carm_macchiatto    - 1 venti      - 300      13    8
+#croissant          - 1 pastry     - 240       5   12
+#prosciutto_chz_brd - 1 container  - 280      19   12
+#sunchips           - 1 srv        - 150       2    7
+#milk               - 2 cups       - 120      13    4.5
+#chk_lunchmeat      - 2 srv        -  60      10    1
+#cheese             - 1 slice      -  25       4    0
+#bread              - 2 slices     -  70       2    1
+#protein_shake      - 2 scoops     - 130      27    1.5 
+#milk               - 1 cup        - 120      13    4.5
+#banana             - 1 banana     - 105       1    0
+#bread              - 2 slices     -  70       2    1
+#cheese             - 2 slices     -  25       4    0
+#butter             - 1 tbsp       - 102       0   12  
+#mayo               - 1 serving    -  50       0    5
 # Fri END
 # Daily totals: 2322 calories, 173 g protein, 78.5 g fat
+# Sat BEGIN
+girl_scout_cookies - 1 serving   - 130      2    8
+avocado_smoothie   - 1 smoothie  - 470     11   20
+carm_macchiatto    - 1 venti     - 300     13    8
+pho_ga             - 1 bowl      - 700     60   10
