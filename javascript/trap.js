@@ -24,13 +24,11 @@ function f(x) {
 
 function integrate(f, a, b, steps, method) {
     var h = (b-a) / steps;
-    var total = 0; 
+    var ival = 0.0;
     for (var i=1; i<=steps; i++) {
-        var ival = parseFloat(h * sum(method(f, a+i*h, h)));
-        print(ival);
-        total += ival;
+        ival += parseFloat(h * sum(method(f, a+i*h, h)));
     }
-    return total; 
+    return ival; 
 }
 
 print(Math.PI);
