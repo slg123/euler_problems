@@ -2,8 +2,6 @@
 //
 // trapezoidal integration in javascript.
 //
-// closer but still a precision issue. 
-//
 //----------------------------------------------
 function sum(n) {
     var v = function (x) {
