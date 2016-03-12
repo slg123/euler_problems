@@ -13,10 +13,10 @@ public class Trapezoidal {
         for (i=3; i<= max_in; i+=2) {
             result = trapez(i, vmin, vmax);
             System.out.printf("%d\t%e\t\n", i, Math.abs(result-1+1/ME)); 
-        }
+        } 
 
     }
-
+    
     public static double f(double x) {
         return Math.exp(-x); 
     }

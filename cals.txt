@@ -233,17 +233,35 @@
 # Wed END
 # Daily totals: 3414.5 calories, 229.1 g protein, 178.5 g fat
 # Thu BEGIN
-eggs               - 3   eggs     -  70       6    5
-bacon              - 4 slices     -  90       5    7
-potatoes           - 6 srv        -  56       0    1
-pasta              - 1 cup        - 220       8    1.5
-marinara           - 2 srv        -  60       2    2
-chicken_breast     - 1 srv        - 231      43    5
-coffee_and_creamer - 4 cups       -  35       0    1.5
-protein_bar        - 1   bar      -  380     27   18
-crackers           - 6 crackers   -  14       0    0 
-cheese             - 4 slices     -  25       4    0
-pasta              - 1 cup        - 220       8    1.5
-bacon              - 2 slices     -  90       5    7
+#eggs               - 3   eggs     -  70       6    5
+#bacon              - 4 slices     -  90       5    7
+#potatoes           - 6 srv        -  56       0    1
+#pasta              - 1 cup        - 220       8    1.5
+#marinara           - 2 srv        -  60       2    2
+#chicken_breast     - 1 srv        - 231      43    5
+#coffee_and_creamer - 4 cups       -  35       0    1.5
+#protein_bar        - 1   bar      -  380     27   18
+#crackers           - 6 crackers   -  14       0    0 
+#cheese             - 4 slices     -  25       4    0
+#pasta              - 1 cup        - 220       8    1.5
+#bacon              - 2 slices     -  90       5    7
 # Thu END
 # Daily totals: 2581 calories, 154 g protein, 99 g fat
+# Fri BEGIN
+carm_macchiatto    - 1 venti      - 300      13    8
+croissant          - 1 pastry     - 240       5   12
+prosciutto_chz_brd - 1 container  - 280      19   12
+sunchips           - 1 srv        - 150       2    7
+milk               - 2 cups       - 120      13    4.5
+chk_lunchmeat      - 2 srv        -  60      10    1
+cheese             - 1 slice      -  25       4    0
+bread              - 2 slices     -  70       2    1
+protein_shake      - 2 scoops     - 130      27    1.5 
+milk               - 1 cup        - 120      13    4.5
+banana             - 1 banana     - 105       1    0
+bread              - 2 slices     -  70       2    1
+cheese             - 2 slices     -  25       4    0
+butter             - 1 tbsp       - 102       0   12  
+mayo               - 1 serving    -  50       0    5
+# Fri END
+# Daily totals: 2322 calories, 173 g protein, 78.5 g fat
