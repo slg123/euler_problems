@@ -18,7 +18,6 @@ function integrate(f, a, b, steps, method) {
     for (i=1; i<=steps; i++) {
         var ival = h * sum(method(f, a+i*h, h));
     }
-    
     return ival;
 }
 
@@ -30,7 +29,6 @@ function sum(n) {
     v.valueOf = v.toString = function () {
         return n;
     };
-
     return v;
 }
 
