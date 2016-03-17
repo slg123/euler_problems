@@ -30,4 +30,10 @@ M = []
 M.append([inv1(x) for x in range(11)])
 print M
 
+Q = []
+# reverse I and D
+inv2 = D(I(g))
+Q.append([inv2(x) for x in range(11)])
+print Q
+
 
