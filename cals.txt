@@ -376,6 +376,19 @@
 # Thu END
 # Daily totals: 2847 calories, 194 g protein, 115 g fat
 # Fri BEGIN
+#protein_bar        - 1 item     -  380      26   19  
+#chicken_breast     - .5 srv     -  433      65   17
+#coffee             - 4 cups     -  20       1    1
+#steak              - 2 srv      -  291      24   22
+#shrimp             - 1 srv      -  50       10   1
+#mashed_potatoes    - 1 srv      -  250      5   10
+#beans              - .5 srv     -  100      6    1
+#corn               - .5 srv     -  60       1    1
+#pecan_pie          - .5 srv     -  400      2   10
+#ice_cream          - .5 srv     -  300      2   12
+#dr_pepper          - 2 srv      -  150      0    0
+# Fri END
+# Daily totals: 2288.5 calories, 131 g protein, 98.5 g fat
+# Sat BEGIN
 protein_bar        - 1 item     -  380      26   19  
-chicken_breast     - .5 srv     -  433      65   17
-coffee             - 2 cups     -  20       1    1
+carm_macchiatto    - 1 venti     - 300      13    8
