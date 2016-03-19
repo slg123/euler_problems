@@ -15,6 +15,7 @@ my %addresses = (
          '111 bar plaza',  'NY USA',
          '999 fifth avenue', 'NY USA',
 );
+print_it(%addresses);
 
 my %canada_addresses = (
         '123 maple way', 'Toronto ON Canada',
@@ -22,16 +23,18 @@ my %canada_addresses = (
         '55 hockey st', 'Toronoto ON Canada',
 );
 
+print_it(%canada_addresses);
+
+print "\n\nafter merging:\n\n"; 
 #
 # merge two hashes with some forbidden kung-fu:
 #
 @addresses{ keys %canada_addresses } = values %canada_addresses;
 
-
-while (my ($key, $value) = each %addresses) {
-    print "$key $value\n"; 
+sub print_it {
+    my %wanted = @_; 
+    while (my ($key, $value) = each %wanted) {
+        print "$key $value\n";
+    }
 }
-
-
-        
-
+print_it(%addresses); 
