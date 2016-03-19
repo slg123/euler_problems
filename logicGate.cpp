@@ -10,9 +10,7 @@ class LogicGate {
 };
 
 LogicGate::doAndGateOperation(int a, int b) {
-    int cmpa = a;
-    int cmpb = b;
-    if ((cmpa == 1) && (cmpb == 1)) {
+    if ((a == 1) && (b == 1)) {
         return 1;
     } else {
         return 0;
@@ -20,9 +18,7 @@ LogicGate::doAndGateOperation(int a, int b) {
 }
 
 LogicGate::doOrGateOperation(int a, int b) {
-    int cmpa = a;
-    int cmpb = b;
-    if ((cmpa == 1) || (cmpb == 1)) {
+    if ((a == 1) || (b == 1)) {
         return 1;
     } else {
         return 0;
@@ -30,9 +26,7 @@ LogicGate::doOrGateOperation(int a, int b) {
 }
 
 LogicGate::doNorGateOperation(int a, int b) {
-    int cmpa = a;
-    int cmpb = b;
-    if ((cmpa == 0) && (cmpb == 0)) {
+    if ((a == 0) && (b == 0)) {
         return 1;
     } else {
         return 0;
