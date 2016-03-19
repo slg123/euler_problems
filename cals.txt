@@ -390,5 +390,11 @@
 # Fri END
 # Daily totals: 2288.5 calories, 131 g protein, 98.5 g fat
 # Sat BEGIN
-protein_bar        - 1 item     -  380      26   19  
-carm_macchiatto    - 1 venti     - 300      13    8
+#protein_bar        - 1 item     -  380      26   19  
+#carm_macchiatto    - 1 venti    -  300      13    8
+#filipino_food      - 1 plate    - 1300      50   50
+#gs_cookies         - 1 bunch    -  300       5   10
+#milk               - 1 cup      -  110       8   2.5
+#chicken_breast     - 1 srv       - 240      50    4
+# Sat END
+# Daily totals: 2630 calories, 152 g protein, 93.5 g fat
