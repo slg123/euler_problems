@@ -78,6 +78,8 @@ int main()
     cout << or_result << endl; 
     cout << nor_result << endl; 
 
+    cout << "\n\n\n"; 
+
     /* test all gates */
     testGates(); 
 
