@@ -1,7 +1,5 @@
 #!/usr/bin/python
 
-from string import letters
-
 NAMES = open('names.txt').read().split(',')
 
 SORTED = sorted(NAMES)
