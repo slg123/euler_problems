@@ -392,9 +392,21 @@
 # Sat BEGIN
 #protein_bar        - 1 item     -  380      26   19  
 #carm_macchiatto    - 1 venti    -  300      13    8
-#filipino_food      - 1 plate    - 1300      50   50
+#filipino_food      - 1 plate    - 1000      50   50
 #gs_cookies         - 1 bunch    -  300       5   10
-#milk               - 1 cup      -  110       8   2.5
-#chicken_breast     - 1 srv       - 240      50    4
+#milk               - 2 cups     -  110       8   2.5
+#chicken_breast     - 1 srv      -  240      50    4
+#bread              - 3 slices   -   70       2    1
+#chk_sausage        - 3 links    -  120      17    5
+#sunchips           - 2 srv      -  150       2    7
+#fruit_smoothie     - 1 smoothie -  120       5    1
 # Sat END
-# Daily totals: 2630 calories, 152 g protein, 93.5 g fat
+# Daily totals: 3430 calories, 226 g protein, 129 g fat
+# Sun BEGIN
+coffee             - 2 cups      -  20       1    1
+bread              - 2 slices    -  70       2    1
+butter             - 1 tbsp      - 102       0   12  
+jam                - 2 servings  -  40       0    0
+pizza              - 2 slices    - 360      14   17
+wings              - 3 wings     -  90       9    5
+dr_pepper          - 2.5 srv     - 100       0    0 

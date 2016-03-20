@@ -41,7 +41,7 @@ void testGates() {
 
     int val_a[4] = { 0, 0, 1, 1 };
     int val_b[4] = { 0, 1, 0, 1 };
-    
+
     for (int i=0; i<4; i++) {
         cout << "AND gate: " << val_a[i] << " " << val_b[i] << " :" << 
                 andGate.doAndGateOperation(val_a[i], val_b[i]) << endl;
@@ -58,7 +58,6 @@ void testGates() {
         cout << "NOR gate: " << val_a[i] << " " << val_b[i] << " :" << 
                 norGate.doNorGateOperation(val_a[i], val_b[i]) << endl;
     }
-
 }
 
 int main() 
@@ -85,5 +84,3 @@ int main()
 
     return 0;
 }
-
-
