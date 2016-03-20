@@ -5,6 +5,7 @@ NAMES = open('names.txt').read().split(',')
 SORTED = sorted(NAMES)
 
 def letter_value(n):
+    #return ord(n)-64    <------ why does this not work????????
     # well this isn't pretty. 
     if n == 'A': return 1
     if n == 'B': return 2
@@ -37,16 +38,13 @@ def letter_value(n):
 def sum_word_value(n):
     total = 0
     for i in n:
-        total += int(letter_value(i))
+        total += letter_value(i)
     return total
 
 position = 0
 grand_total = 0
 for i in SORTED:
     position += 1
-    grand_total += position * int(sum_word_value(i))
+    grand_total += position * sum_word_value(i)
 
 print grand_total
-
-
-
