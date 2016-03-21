@@ -407,6 +407,11 @@ coffee             - 2 cups      -  20       1    1
 bread              - 2 slices    -  70       2    1
 butter             - 1 tbsp      - 102       0   12  
 jam                - 2 servings  -  40       0    0
-pizza              - 2 slices    - 360      14   17
-wings              - 3 wings     -  90       9    5
+pizza              - 3 slices    - 360      14   17
+wings              - 5 wings     -  90       9    5
 dr_pepper          - 2.5 srv     - 100       0    0 
+gs_cookies         - 1 srv       - 130       1    6
+milk               - 1 cup       - 110       8   2.5
+tilapia            - 2 fillets   - 128      22    4
+# Sun END
+# Daily totals: 2638 calories, 146 g protein, 108.5 g fat
