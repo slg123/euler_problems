@@ -11,8 +11,8 @@ def sum_word_value(n):
             sum += ord(i)-64
     return sum
 
-position = 0
-total = 0
+position = total = 0
+
 for i in SORTED:
     position += 1
     total += position * sum_word_value(i)
