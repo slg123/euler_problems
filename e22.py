@@ -12,7 +12,6 @@ def sum_word_value(n):
     return sum
 
 position = total = 0
-
 for i in SORTED:
     position += 1
     total += position * sum_word_value(i)
