@@ -403,15 +403,53 @@
 # Sat END
 # Daily totals: 3430 calories, 226 g protein, 129 g fat
 # Sun BEGIN
-coffee             - 2 cups      -  20       1    1
-bread              - 2 slices    -  70       2    1
-butter             - 1 tbsp      - 102       0   12  
-jam                - 2 servings  -  40       0    0
-pizza              - 3 slices    - 360      14   17
-wings              - 5 wings     -  90       9    5
-dr_pepper          - 2.5 srv     - 100       0    0 
-gs_cookies         - 1 srv       - 130       1    6
-milk               - 1 cup       - 110       8   2.5
-tilapia            - 2 fillets   - 128      22    4
+#coffee             - 2 cups      -  20       1    1
+#bread              - 2 slices    -  70       2    1
+#butter             - 1 tbsp      - 102       0   12  
+#jam                - 2 servings  -  40       0    0
+#pizza              - 3 slices    - 360      14   17
+#wings              - 5 wings     -  90       9    5
+#dr_pepper          - 2.5 srv     - 100       0    0 
+#gs_cookies         - 1 srv       - 130       1    6
+#milk               - 1 cup       - 110       8   2.5
+#tilapia            - 2 fillets   - 128      22    4
 # Sun END
 # Daily totals: 2638 calories, 146 g protein, 108.5 g fat
+# Mon BEGIN
+#coffee             - 2 cups      -  20       1    1
+#bread              - 2 slices    -  70       2    1
+#butter             - 1 tbsp      - 102       0   12  
+#jam                - 2 servings  -  40       0    0
+#choc_milk          - 2 cup       - 130       8    2.5
+#protein_bar        - 1 item     -  380      26   19  
+#fajitas            - 1 srv       - 271      35    9
+#guac               - 1 srv       - 100       1    9
+#dr_pepper          - 1 srv       - 100       0    0 
+#pizza              - 1 slice     - 360      14   17
+#tortilla           - 1 tortilla  -  90      2.5  2.5
+#tilapia            - 2 fillets   - 128      22    4
+#rice               - 1 cup       - 200       4    0.5
+#protein_bar        - 1 bar       - 230      21    9
+#milk               - 1 cup       - 110       8   2.5
+#Tue BEGIN
+#protein_shake       - 2 scoops    - 130      27    1.5 
+#milk                - 1 cup       - 120       8    5
+#peanut_butter       - 1 tbsp      -  80       4    8
+#coffee              - 2 cups      -  20       1    1
+#ground_beef         - 1 meal      - 380      24   25
+#lettuce             - .3 head     -   5       0    0
+# Tue END
+# Daily totals: 2166.5 calories, 98 g protein, 43 g fat
+# Wed BEGIN
+#boudin              - 4 servings  - 130     6    7
+#milk                - 1 cup       - 120     8    5
+#coffee              - 2 cups      -  20     1    1
+#mexican_food        - 1 plate     - 1200   30   40
+#dr_pepper           - 2.5 srv       - 100     0    0
+# Wed END
+# Daily totals: 2130 calories, 64 g protein, 75 g fat
+# Thu BEGIN
+egg_whites         - 1   cup     - 125    26     1
+eggs               - 2   eggs    -  70     6     5
+turkey_bacon       - 4 strips    -  40     6    1.5
+boudin             - 5 servings  - 130     6    7

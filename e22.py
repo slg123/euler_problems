@@ -9,6 +9,7 @@ def sum_word_value(n):
     for i in n:
         if i.isalpha():
             sum += ord(i)-64
+    print sum
     return sum
 
 position = total = 0
