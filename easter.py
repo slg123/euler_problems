@@ -26,5 +26,3 @@ day = int ( ((h+L-7*m+114) % 31) + 1 )
 monthname = datetime.date(1900, month, 1).strftime('%B')
 
 print str(day)+" "+str(monthname)
-
-
