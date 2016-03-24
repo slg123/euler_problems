@@ -15,9 +15,9 @@ function getTotal() {
 function sumWordValue(s) {
     var sum = 0;
     if (s != null) {
-        var chars = s.split(''); 
-        for (var i=0; i<chars.length; i++) {
-            sum += chars[i].charCodeAt(chars[i])-64; 
+        var word = s.split(''); 
+        for (var i=0; i<word.length; i++) {
+            sum += word[i].charCodeAt(word[i])-64; 
         }
     }
     return sum;
