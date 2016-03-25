@@ -1,5 +1,9 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+use autodie;
+
 my %h; 
 
 @h{'A' .. 'Z'} = (1 .. 26);
