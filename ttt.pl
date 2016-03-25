@@ -8,14 +8,19 @@ while (my ($key, $value) = each %h) {
     print "$key $value\n";
 }
 
-sub get_value {
-    my $item = shift;
-    print $h{$item};
-    print "\n"; 
+sub get_name_value {
+    my $name = shift;
+    my @n = split("", $name); 
+    my $total = 0; 
+    foreach my $i (@n) {
+        $total += $h{$i}; 
+    }
+    return $total; 
 }
 
-get_value('B');
-get_value('U');
-get_value('G');
+print(get_name_value("NINA"), "\n"); 
+print(get_name_value("SCOTT"), "\n");
+print(get_name_value("BUGS"), "\n");
+print(get_name_value("BUNNY"), "\n");
 
 
