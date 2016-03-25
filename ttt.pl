@@ -22,9 +22,9 @@ sub get_name_value {
     return $total; 
 }
 
-print(get_name_value("NINA"), "\n"); 
-print(get_name_value("SCOTT"), "\n");
-print(get_name_value("BUGS"), "\n");
-print(get_name_value("BUNNY"), "\n");
+my @names = qw( NINA SCOTT BUGS BUNNY );
+for my $name(@names) {
+    print "value for: $name == ", (get_name_value($name), "\n"); 
+}
 
 
