@@ -449,7 +449,20 @@
 # Wed END
 # Daily totals: 2130 calories, 64 g protein, 75 g fat
 # Thu BEGIN
-egg_whites         - 1   cup     - 125    26     1
-eggs               - 2   eggs    -  70     6     5
-turkey_bacon       - 4 strips    -  40     6    1.5
-boudin             - 5 servings  - 130     6    7
+#egg_whites         - 1   cup     - 125    26     1
+#eggs               - 2   eggs    -  70     6     5
+#turkey_bacon       - 4 strips    -  40     6    1.5
+#boudin             - 6 servings  - 130     6    7
+#hamburger          - 1.5 patty     - 340    46    16
+#bread              - 2 slices    -  70       2    1
+#yogurt             - 2 srv       - 140     4    0
+#almonds            - 1 srv       - 140     3    4
+#reeses             - 1 cup       - 105     2    6
+#protein_bar        - 1 item     -  380      26   19  
+# Thu END
+# Daily totals: 2760 calories, 210 g protein, 114 g fat
+# Fri BEGIN  
+donut               - 4 donuts     - 190     2   11
+boudin              - 2 servings   - 130     6    7
+chk_sausage         - 1.5 servings - 90      6    5
+milk                - 1 cup        - 130    13    3
