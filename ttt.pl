@@ -13,8 +13,7 @@ while (my ($key, $value) = each %h) {
 }
 
 sub get_name_value {
-    my $name = shift;
-    my @n = split("", $name); 
+    my @n = split("", shift); 
     my $total = 0; 
     foreach my $i (@n) {
         $total += $h{$i}; 
