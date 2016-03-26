@@ -12,7 +12,6 @@ int main() {
     ifstream infile("names.txt"); 
     string line = ""; 
     vector<string> all_words;
-
     while (getline(infile, line)) {
         stringstream strstr(line);
         string word = ""; 
