@@ -466,3 +466,8 @@ donut               - 4 donuts     - 190     2   11
 boudin              - 2 servings   - 130     6    7
 chk_sausage         - 1.5 servings - 90      6    5
 milk                - 1 cup        - 130    13    3
+chocolate_milk      - 1 cup        - 140    13    4.5
+gs_cookies          - 1.5 srv      - 130     1    6
+peking_duck         - 2.5 srv      - 340    29   14
+# Fri END
+# Daily totals: 2470 calories, 129 g protein, 117 g fat

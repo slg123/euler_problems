@@ -26,4 +26,3 @@ for my $name(@names) {
     print "value for: $name == ", (get_name_value($name), "\n"); 
 }
 
-
