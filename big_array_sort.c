@@ -34,9 +34,10 @@ int main() {
         fscanf(input, "%lu", &ar[i]); 
     }
     printf("very large array created.\n"); 
-    // qsort()
-    printf("sorting very large array.\n"); 
+
     qsort(ar, LIST_SIZE, sizeof(unsigned long), compare);  
+
+    printf("very large array sorted.\n"); 
 
     fclose(input); 
 
@@ -45,9 +46,9 @@ int main() {
     for (i=0; i<LIST_SIZE; i++) {
         fprintf(sorted_output, "%lu\n", ar[i]); 
     }
-
     free(ar); 
-    printf("very large array freed\n"); 
+    fclose(sorted_output); 
+
     return 0;
 }
 
