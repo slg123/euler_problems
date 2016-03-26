@@ -9,10 +9,12 @@ using namespace std;
 
 int get_numeric_value(string s);
 
-int main() {
+int main() 
+{
     ifstream infile("names.txt"); 
     string line = ""; 
     vector<string> all_words;
+
     while (getline(infile, line)) {
         stringstream strstr(line);
         string word = ""; 
@@ -32,7 +34,8 @@ int main() {
     return 0;
 }
 
-int get_numeric_value(string s) {
+int get_numeric_value(string s) 
+{
     int total = 0; 
     for (unsigned i : s) {
         if (i > 64) { 
