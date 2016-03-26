@@ -29,7 +29,6 @@ int main() {
         total += position * get_numeric_value(all_words[i]); 
     }
     cout << total << endl; 
-    
     return 0;
 }
 
