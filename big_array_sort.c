@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 #include <fcntl.h>
 
 void fill_bitarray(int *ar, int sz); 
+int compare(const void *a, const void *b);
 
 int main() {
 
@@ -22,7 +24,30 @@ int main() {
                                      bitarray[3], bitarray[4], bitarray[5], bitarray[6],
                                      bitarray[7], bitarray[8], bitarray[9]); 
     }
+    fclose(output); 
 
+    FILE *input;
+    input = fopen("number_list.dat", "r"); 
+    unsigned long *ar; 
+    ar = (unsigned long *) malloc(LIST_SIZE * sizeof(unsigned long)); 
+    for (i=0; i<LIST_SIZE; i++) {
+        fscanf(input, "%lu", &ar[i]); 
+    }
+    printf("very large array created.\n"); 
+    // qsort()
+    printf("sorting very large array.\n"); 
+    qsort(ar, LIST_SIZE, sizeof(unsigned long), compare);  
+
+    fclose(input); 
+
+    FILE *sorted_output;
+    sorted_output = fopen("number_list.sorted", "w");
+    for (i=0; i<LIST_SIZE; i++) {
+        fprintf(sorted_output, "%lu\n", ar[i]); 
+    }
+
+    free(ar); 
+    printf("very large array freed\n"); 
     return 0;
 }
 
@@ -36,5 +61,14 @@ void fill_bitarray(int *ar, int sz) {
             }
         }
         ar[i] = rand() % 10; 
+    }
+}
+
+int compare(const void *a, const void *b) {
+    const unsigned long long *x = a, *y = b; 
+    if (*x > *y) {
+        return 1;
+    } else {
+        return (*x < *y) ? -1 : 0;
     }
 }
