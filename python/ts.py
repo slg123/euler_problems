@@ -64,27 +64,36 @@ def three():
 #        
 #
 def four():
-    def nSquared(n):
+    def nSquared1(n):
         i = 0
         start = time.time()
-        j = 5 * (n**2) + 27*n + 1005
         i = (n**2)
         end = time.time()
         return i, end-start
 
+    def nSquared2(n):
+        i = 0
+        start = time.time()
+        i = 5 * (n**2) + 27*n + 1005 # same as n**2
+        end = time.time()
+        return i, end-start
+
     for i in range(10):
-        print("Sum is %d required %10.7f seconds"%nSquared(10000000))
+        print("Sum is %d required %10.7f seconds"%nSquared1(10000000))
 
     print("\n\n\n")
 
-    for j in range(10):
-        print("Sum is %d required %10.7f seconds"%nSquared(10000000))
+    for i in range(10):
+        print("Sum is %d required %10.7f seconds"%nSquared2(10000000))
 
-    print(nSquared(2)); 
-    print(nSquared(3)); 
-    print(nSquared(4)); 
+    print(nSquared1(2)); 
+    print(nSquared1(3)); 
+    print(nSquared1(4)); 
+    print(nSquared2(2)); 
+    print(nSquared2(3)); 
+    print(nSquared2(4)); 
     
-one()
+#one()
 two()
 three()
 four()
