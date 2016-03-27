@@ -92,11 +92,26 @@ def four():
     print(nSquared2(2)); 
     print(nSquared2(3)); 
     print(nSquared2(4)); 
-    
+   
+def five():
+    def hanoi(n, start, end, extra):
+        if n == 1:
+            print "move disk #1 from "+start+" to "+end+"\n"
+        else:     
+            hanoi(n-1, start, end, extra)   
+            print "move disk #"+str(n)+" from "+str(start)+" to "+str(end)+"\n"
+            hanoi(n-1, start, extra, end)
+
+    disks = 10 
+    start = time.time()
+    hanoi(disks, 'A', 'C', 'B')
+    end = time.time()
+    print("hanoi with "+str(disks)+" disks required "+str(end-start))+" seconds\n"
+        
 #one()
 two()
 three()
 four()
-
+five()
 
 
