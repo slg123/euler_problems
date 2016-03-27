@@ -474,7 +474,14 @@
 # Fri END
 # Daily totals: 2830 calories, 151 g protein, 132 g fat
 # Sat BEGIN
-boudin               - 4 servings   - 130     6     7
+boudin               - 6 servings   - 130     6     7
 egg_white            - 1   cup      - 125    26     1
-egg                  - 1   egg      -  70     6     5
+egg                  - 3   egg      -  70     6     5
 carm_macchiatto      - 1 venti      - 300    13     8
+shepherds_pie        - 1 dinner     - 370    22    24
+yogurt               - 1 srv        - 200     4     0
+milk                 - 1 cup        - 130    13     3
+meatloaf             - 1 m          - 340    24    23
+pasta                - 1 p          - 290    14     5
+# Sat END
+# Daily totals: 2745 calories, 170 g protein, 121 g fat
