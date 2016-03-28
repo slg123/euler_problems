@@ -55,13 +55,7 @@ int main() {
 void fill_bitarray(int *ar, int sz) {
     int i;
     for (i=0; i<sz; i++) {
-        if (ar[0] == 0) {
-            ar[0] = rand() % 10 + 1;
-            if (ar[0] == 10) {
-                ar[0] = rand() % 9; 
-            }
-        }
-        ar[i] = rand() % 10; 
+        ar[i] = (rand() % 9) + 1;
     }
 }
 
