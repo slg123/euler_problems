@@ -8,7 +8,8 @@ def dec2bin(n):
         else:
             l.append(1)
         n = n / 2
-    return ''.join(map(str, l))[::-1]
+    #return ''.join(map(str, l))[::-1]
+    return ''.join(reversed((map(str, l))))
 
 print dec2bin(42)
 print dec2bin(512)
