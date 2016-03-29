@@ -8,10 +8,13 @@ class Palindrome
 public:
     static bool isPalindrome(std::string str)
     {
+        /* make all letters lowercase */
         std::transform(str.begin(), str.end(), str.begin(), ::tolower);
 
+        /* remove spaces */
         str.erase(remove_if(str.begin(), str.end(), isspace), str.end());      
 
+        /* remove punctuation */
         str.erase(remove_if(str.begin(), str.end(), ispunct), str.end());      
 
         std::cout << str << std::endl;
