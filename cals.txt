@@ -486,6 +486,10 @@
 # Sat END
 # Daily totals: 2745 calories, 170 g protein, 121 g fat
 # Mon BEGIN
-egg_white            - 1   cup      - 125    26     1
-chk_sausage          - 3   servings - 90      6     5
-coffee               - 2 cups      -  20      1     1
+#egg_white            - 1   cup      - 125    26     1
+#chk_sausage          - 3   servings - 90      6     5
+#coffee               - 2 cups      -  20      1     1
+#burrito              - 1 burrito   - 860     32    41
+#nachos               - 1 order     - 760     19    38
+# Mon END
+# Daily totals: 2055 calories, 97 g protein, 97 g fat
