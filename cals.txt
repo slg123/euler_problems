@@ -491,5 +491,14 @@
 #coffee               - 2 cups      -  20      1     1
 #burrito              - 1 burrito   - 860     32    41
 #nachos               - 1 order     - 760     19    38
+#chk_thigh            - 1 thigh     - 135     14     9
 # Mon END
-# Daily totals: 2055 calories, 97 g protein, 97 g fat
+# Daily totals: 2190 calories, 111 g protein, 106 g fat
+# Tue BEGIN
+egg_white            - 1   cup      - 125    26     1
+chk_sausage          - 2.5 servings -  90     6     5
+coffee               - 2 cups       -  20     1     1
+carm_macchiatto      - 1 venti      - 300    13     8
+chicken              - 1 drumstick  - 112    14     6
+protein_bar          - 1 item       - 380    26    19  
+milk                 - 1 cup        - 130    13     3
