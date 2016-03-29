@@ -23,7 +23,6 @@ public:
             return true;
         } else {
             return false;
-        std::cout << str << std::endl; 
         }
     }
 };
