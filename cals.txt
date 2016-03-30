@@ -516,3 +516,8 @@ egg_white            - 1   cup      - 125    26     1
 ground_beef          - 1  meal      - 380    24    25
 milk                 - 1  cup       - 130    13     3
 protein_bar          - 1 bar       - 230      21    9
+chinese_pork_bun     - 3 buns      - 270      9    10
+baked_potato         - 1 potato     - 240     4     6
+banana               - 1 banana    - 105       1    0
+# Wed END
+# Daily totals: 2280 calories, 123 g protein, 83 g fat

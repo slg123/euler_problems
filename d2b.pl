@@ -19,3 +19,4 @@ print dec2bin(512), "\n";
 print dec2bin(1024), "\n"; 
 print dec2bin(1138), "\n"; 
 print dec2bin(2016), "\n"; 
+print dec2bin(15023212753421058048), "\n"; 
