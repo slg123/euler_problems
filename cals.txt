@@ -501,8 +501,18 @@
 #carm_macchiatto      - 1 venti      - 300    13     8
 #chicken              - 1 drumstick  - 112    14     6
 #protein_bar          - 1 item       - 380    26    19  
-#milk                 - 1 cup        - 130    13     3
+#milk                 - 2 cup        - 130    13     3
 #burger_patty         - 3 servings   - 173    21     9
 #baked_potato         - 1 potato     - 240     4     6
+#tuna                 - 2 servings   -  45    10    .5
+#crackers             - 5 crackers   -  14     0     0 
+#mayo                 - 1 srv        - 100    11     0
 # Tue END
-# Daily totals: 2071 calories, 176 g protein, 84.5 g fat
+# Daily totals: 2461 calories, 220 g protein, 88.5 g fat
+# Wed BEGIN
+coffee               - 3 cups       -  20     1     1
+rice_corn            - 1   cup      - 200     4     6
+egg_white            - 1   cup      - 125    26     1
+ground_beef          - 1  meal      - 380    24    25
+milk                 - 1  cup       - 130    13     3
+protein_bar          - 1 bar       - 230      21    9
