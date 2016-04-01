@@ -105,6 +105,7 @@ void selection_sort(int *a) {
     }
 }
 
+// rosetta code - http://rosettacode.org/wiki/Sorting_algorithms/Quicksort#C
 void quicksort (int *a, int n) {
     int i, j, p, t;
     if (n < 2)
