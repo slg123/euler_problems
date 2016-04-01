@@ -14,14 +14,13 @@ int main() {
     int arr[NELEMS];
 
     generate_array(arr, NELEMS); 
-
     display(arr); 
     bubble_sort(arr);
     display(arr); 
 
     int arr2[NELEMS];
-    generate_array(arr2, NELEMS); 
 
+    generate_array(arr2, NELEMS); 
     display(arr2);
     selection_sort(arr2);
     display(arr2);
