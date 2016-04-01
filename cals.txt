@@ -510,14 +510,36 @@
 # Tue END
 # Daily totals: 2461 calories, 220 g protein, 88.5 g fat
 # Wed BEGIN
-coffee               - 3 cups       -  20     1     1
-rice_corn            - 1   cup      - 200     4     6
-egg_white            - 1   cup      - 125    26     1
-ground_beef          - 1  meal      - 380    24    25
-milk                 - 1  cup       - 130    13     3
-protein_bar          - 1 bar       - 230      21    9
-chinese_pork_bun     - 3 buns      - 270      9    10
-baked_potato         - 1 potato     - 240     4     6
-banana               - 1 banana    - 105       1    0
+#coffee               - 3 cups       -  20     1     1
+#rice_corn            - 1   cup      - 200     4     6
+#egg_white            - 1   cup      - 125    26     1
+#ground_beef          - 1  meal      - 380    24    25
+#milk                 - 1  cup       - 130    13     3
+#protein_bar          - 1 bar       - 230      21    9
+#chinese_pork_bun     - 3 buns      - 270      9    10
+#baked_potato         - 1 potato     - 240     4     6
+#banana               - 1 banana    - 105       1    0
+#chicken_breast       - 1 srv      -  240      50    4
 # Wed END
-# Daily totals: 2280 calories, 123 g protein, 83 g fat
+# Daily totals: 2520 calories, 173 g protein, 87 g fat
+#Thu BEGIN
+#kolaches              - 2 kolaches - 326  11  16
+#egg_white             - 1   cup    - 125  26   1
+#chk_sausage           - 1 link     - 160  14   9
+#chicken_breast        - 1 srv      - 240  50   4
+#milk                  - 1  cup     - 130  13   3
+#donuts!               - 2 donuts!  - 217   3  11
+#banana                - 1 banana   - 105   1   0
+#apple                 - 1 apple    - 96    0   0
+#baked_potato          - 1 potato   - 240   4   6
+#chicken_breast        - 1 srv      - 240   50  4
+#bbq_sauce             - 1 srv      - 85    0   0
+# Thu END
+# Daily totals: 2507 calories, 186 g protein, 81 g fat
+#Fri BEGIN
+kolaches              - 2 kolaches - 326  11  16
+donuts!               - 1 donut!   - 217   3  11
+coffee                - 3 cups     -  20   1   1
+chk_sausage           - 1 link     - 160  14   9
+hamburger             - .5 patty   - 340  46    16
+rice_corn             - 1   cup    - 200   4   6
