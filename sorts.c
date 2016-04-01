@@ -30,8 +30,6 @@ int main() {
     printf("%d operations of %d element bubblesort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_bubblesort - begin_bubblesort)/CLOCKS_PER_SEC); 
 
-    //display(arr); 
-
     clock_t begin_selection_sort, end_selection_sort;
 
     begin_selection_sort = clock();
@@ -47,8 +45,6 @@ int main() {
     printf("%d operations %d element selection sort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_selection_sort - begin_selection_sort)/CLOCKS_PER_SEC); 
 
-    //display(arr2); 
-   
     clock_t begin_quicksort, end_quicksort;
 
     begin_quicksort = clock(); 
@@ -61,10 +57,13 @@ int main() {
 
     end_quicksort = clock(); 
 
-    //display(arr2); 
-
     printf("%d operations of %d element quicksort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_quicksort - begin_quicksort)/CLOCKS_PER_SEC); 
+
+    // display last 20 elements in sorted arrays. why not. 
+    display(arr); 
+    display(arr2); 
+    display(arr3); 
 
     return 0;
 }
