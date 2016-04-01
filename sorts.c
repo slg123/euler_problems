@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define NELEMS 10000
-#define NUM_SORTS 10000
+#define NELEMS 2000
+#define NUM_SORTS 2000
 
 void initialize_array(int *a, int sz); 
 void generate_array(int *a, int sz);
@@ -44,7 +44,7 @@ int main() {
     end_selection_sort = clock();
 
     printf("%d %d element sorts took %.3f seconds.\n", NUM_SORTS, NELEMS, 
-        (double)(end_selection_sort - end_selection_sort)/CLOCKS_PER_SEC); 
+        (double)(end_selection_sort - begin_selection_sort)/CLOCKS_PER_SEC); 
 
     display(arr2); 
 
