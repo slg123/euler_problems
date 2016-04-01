@@ -17,8 +17,6 @@ int main() {
 
     clock_t begin_bubblesort, end_bubblesort;
 
-    printf("running %d sort operations of %d array elements using bubble sort...\n", NUM_SORTS, NELEMS); 
-
     begin_bubblesort = clock();
 
     int arr[NELEMS];
@@ -36,8 +34,6 @@ int main() {
 
     clock_t begin_selection_sort, end_selection_sort;
 
-    printf("running %d sort operations of %d array elements using selection sort...\n", NUM_SORTS, NELEMS); 
-
     begin_selection_sort = clock();
 
     int arr2[NELEMS];
@@ -54,8 +50,6 @@ int main() {
     //display(arr2); 
    
     clock_t begin_quicksort, end_quicksort;
-
-    printf("running %d sort operations of %d array elements using quicksort...\n", NUM_SORTS, NELEMS); 
 
     begin_quicksort = clock(); 
 
