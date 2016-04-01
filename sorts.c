@@ -27,7 +27,7 @@ int main() {
 
     end_bubblesort = clock(); 
 
-    printf("%d %d bubblesort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
+    printf("%d operations of %d element bubblesort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_bubblesort - begin_bubblesort)/CLOCKS_PER_SEC); 
 
     //display(arr); 
@@ -44,7 +44,7 @@ int main() {
 
     end_selection_sort = clock();
 
-    printf("%d %d selection sort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
+    printf("%d operations %d element selection sort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_selection_sort - begin_selection_sort)/CLOCKS_PER_SEC); 
 
     //display(arr2); 
@@ -63,7 +63,7 @@ int main() {
 
     //display(arr2); 
 
-    printf("%d %d quicksort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
+    printf("%d operations of %d element quicksort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_quicksort - begin_quicksort)/CLOCKS_PER_SEC); 
 
     return 0;
