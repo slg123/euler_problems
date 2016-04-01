@@ -8,7 +8,7 @@
 void initialize_array(int *a, int sz); 
 void generate_array(int *a, int sz);
 void bubble_sort(int *ar);
-void selection_sort(int *ar);
+void selection_sort (int *a, int n);
 void quicksort (int *a, int n);
 void swap(int i, int j, int *ar);
 void display(int *ar); 
@@ -37,7 +37,7 @@ int main() {
     int arr2[NELEMS];
     for (int i=0; i<NUM_SORTS; i++) {
         generate_array(arr2, NELEMS); 
-        selection_sort(arr2);
+        selection_sort(arr2, NELEMS);
     }
 
     end_selection_sort = clock();
@@ -81,26 +81,29 @@ void generate_array(int *a, int sz) {
 }
 
 void bubble_sort(int *a) {
-    int i, j;
+    int i, j, t;
     for (i=NELEMS-1; i>1; i--) {
         for (j=0; j<i; j++) {
             if (a[j] > a[j+1]) {
-                swap(j, j+1, a);
+                t = a[j];
+                a[j] = a[j+1];
+                a[j+1] = t;
             }
         }
     }
 }
 
-void selection_sort(int *a) {
-    int i, j, min;
-    for (i=0; i<NELEMS-1; i++) {
-        min = i;
-        for (j=i+1; j<NELEMS; j++) {
-            if (a[j] < a[min]) {
-                min = j;
-                swap(i, j, a);
+void selection_sort (int *a, int n) {
+    int i, j, m, t;
+    for (i=0; i<n; i++) {
+        for (j=i, m=i; j<n; j++) {
+            if (a[j] < a[m]) {
+                m=j;
             }
         }
+        t = a[i];
+        a[i] = a[m];
+        a[m] = t;
     }
 }
 
@@ -123,12 +126,6 @@ void quicksort (int *a, int n) {
     }
     quicksort(a, i);
     quicksort(a + i, n - i);
-}
-
-void swap(int i, int j, int *a) {
-    int t = a[i];
-    a[i] = a[j];
-    a[j] = t;
 }
 
 // display last 20 elements in sorted array, if desired.
