@@ -9,6 +9,7 @@ void initialize_array(int *a, int sz);
 void generate_array(int *a, int sz);
 void bubble_sort(int *ar);
 void selection_sort(int *ar);
+void quicksort (int *a, int n);
 void swap(int i, int j, int *ar);
 void display(int *ar); 
 
@@ -19,34 +20,57 @@ int main() {
     printf("running %d sort operations of %d array elements using bubble sort...\n", NUM_SORTS, NELEMS); 
 
     begin_bubblesort = clock();
+
     int arr[NELEMS];
     for (int i=0; i<NUM_SORTS; i++) {
         generate_array(arr, NELEMS); 
         bubble_sort(arr);
     }
+
     end_bubblesort = clock(); 
 
-    printf("%d %d element sorts took %.3f seconds.\n", NUM_SORTS, NELEMS, 
+    printf("%d %d bubblesort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_bubblesort - begin_bubblesort)/CLOCKS_PER_SEC); 
 
-    display(arr); 
+    //display(arr); 
 
     clock_t begin_selection_sort, end_selection_sort;
 
     printf("running %d sort operations of %d array elements using selection sort...\n", NUM_SORTS, NELEMS); 
 
     begin_selection_sort = clock();
+
     int arr2[NELEMS];
     for (int i=0; i<NUM_SORTS; i++) {
         generate_array(arr2, NELEMS); 
         selection_sort(arr2);
     }
+
     end_selection_sort = clock();
 
-    printf("%d %d element sorts took %.3f seconds.\n", NUM_SORTS, NELEMS, 
+    printf("%d %d selection sort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
         (double)(end_selection_sort - begin_selection_sort)/CLOCKS_PER_SEC); 
 
-    display(arr2); 
+    //display(arr2); 
+   
+    clock_t begin_quicksort, end_quicksort;
+
+    printf("running %d sort operations of %d array elements using quicksort...\n", NUM_SORTS, NELEMS); 
+
+    begin_quicksort = clock(); 
+
+    int arr3[NELEMS]; 
+    for (int i=0; i<NUM_SORTS; i++) {
+        generate_array(arr3, NELEMS); 
+        quicksort(arr3, NELEMS); 
+    }
+
+    end_quicksort = clock(); 
+
+    //display(arr2); 
+
+    printf("%d %d quicksort took %.3f seconds.\n", NUM_SORTS, NELEMS, 
+        (double)(end_quicksort - begin_quicksort)/CLOCKS_PER_SEC); 
 
     return 0;
 }
@@ -85,6 +109,26 @@ void selection_sort(int *a) {
             }
         }
     }
+}
+
+void quicksort (int *a, int n) {
+    int i, j, p, t;
+    if (n < 2)
+        return;
+    p = a[n / 2];
+    for (i = 0, j = n - 1;; i++, j--) {
+        while (a[i] < p)
+            i++;
+        while (p < a[j])
+            j--;
+        if (i >= j)
+            break;
+        t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+    }
+    quicksort(a, i);
+    quicksort(a + i, n - i);
 }
 
 void swap(int i, int j, int *a) {
