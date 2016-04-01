@@ -59,7 +59,7 @@ void initialize_array(int *a, int sz) {
 
 void generate_array(int *a, int sz) {
     for (int i=0; i<sz; i++) {
-        a[i] = rand() % 99 + 1; 
+        a[i] = rand() % 999 + 1; 
     }
 }
 
