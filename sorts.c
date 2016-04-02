@@ -3,7 +3,7 @@
 #include <time.h>
 
 #define NELEMS 1000
-#define NUM_SORTS 10000
+#define NUM_SORTS 1000
 
 typedef void(*func_t)(int *ar, int n); 
 
@@ -85,7 +85,7 @@ func_t selection_sort (int *a, int n) {
 func_t quicksort (int *a, int n) {
     int i, j, p, t;
     if (n<2) 
-        return;
+        return 0;
     p = a[n / 2];
     for (i = 0, j = n - 1;; i++, j--) {
         while (a[i] < p)
