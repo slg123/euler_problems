@@ -14,14 +14,14 @@ func_t selection_sort (int *a, int n);
 func_t quicksort (int *a, int n); 
 void display (int *ar); 
 
-func_t functions[] = { (func_t)bubble_sort, (func_t)selection_sort, (func_t)quicksort };
-
 int main() {
+
+    func_t functions[] = { (func_t)bubble_sort, (func_t)selection_sort, (func_t)quicksort };
 
     for (int i=0; i<sizeof(functions)/sizeof(functions[0]); i++) {
 
         int arr[NELEMS]; 
-  
+
         clock_t begin, end;
 
         initialize_array(arr, NELEMS); 
