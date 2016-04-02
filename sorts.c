@@ -7,10 +7,9 @@
 
 void initialize_array(int *a, int sz); 
 void generate_array(int *a, int sz);
-void bubble_sort(int *ar);
+void bubble_sort(int *ar, int n);
 void selection_sort (int *a, int n);
 void quicksort (int *a, int n);
-void swap(int i, int j, int *ar);
 void display(int *ar); 
 
 int main() {
@@ -22,7 +21,7 @@ int main() {
     int arr[NELEMS];
     for (int i=0; i<NUM_SORTS; i++) {
         generate_array(arr, NELEMS); 
-        bubble_sort(arr);
+        bubble_sort(arr, NELEMS);
     }
 
     end_bubblesort = clock(); 
@@ -80,9 +79,9 @@ void generate_array(int *a, int sz) {
     }
 }
 
-void bubble_sort(int *a) {
+void bubble_sort(int *a, int n) {
     int i, j, t;
-    for (i=NELEMS-1; i>1; i--) {
+    for (i=n-1; i>1; i--) {
         for (j=0; j<i; j++) {
             if (a[j] > a[j+1]) {
                 t = a[j];

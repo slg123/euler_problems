@@ -537,11 +537,15 @@
 # Thu END
 # Daily totals: 2507 calories, 186 g protein, 81 g fat
 #Fri BEGIN
-kolaches              - 2 kolaches - 326  11  16
-donuts!               - 1 donut!   - 217   3  11
-coffee                - 3 cups     -  20   1   1
-chk_sausage           - 1 link     - 160  14   9
-hamburger             - .5 patty   - 340  46  16
-rice_corn             - 1   cup    - 200   4   6
-chinese_pork_bun      - 1 bun      - 270   9  10
-kolache               - 1 kolache  - 326  11  16
+#kolaches              - 2 kolaches - 326  11  16
+#donuts!               - 1 donut!   - 217   3  11
+#coffee                - 3 cups     -  20   1   1
+#chk_sausage           - 1 link     - 160  14   9
+#hamburger             - .5 patty   - 340  46  16
+#rice_corn             - 1   cup    - 200   4   6
+#chinese_pork_bun      - 1 bun      - 270   9  10
+#kolache               - 1 kolache  - 326  11  16
+#boudin                - 4.8 servings - 130   6   7
+#rice_corn             - 1   cup    - 200   4   6
+# Fri END
+# Daily totals: 2879 calories, 121.8 g protein, 134.6 g fat
