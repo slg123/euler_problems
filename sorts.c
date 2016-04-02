@@ -7,8 +7,8 @@
 
 typedef void(*func_t)(int *ar, int n); 
 
-void initialize_array(int *a, int sz); 
-void generate_array(int *a, int sz);
+void initialize_array(int *a, int n); 
+void generate_array(int *a, int n);
 func_t bubble_sort(int *a, int n); 
 func_t selection_sort (int *a, int n); 
 func_t quicksort (int *a, int n); 
@@ -43,14 +43,14 @@ int main() {
     return 0;
 }
 
-void initialize_array(int *a, int sz) {
-    for (int i=0; i<sz; i++) {
+void initialize_array(int *a, int n) {
+    for (int i=0; i<n; i++) {
         a[i] = 0;
     }
 }
 
-void generate_array(int *a, int sz) {
-    for (int i=0; i<sz; i++) {
+void generate_array(int *a, int n) {
+    for (int i=0; i<n; i++) {
         a[i] = rand() % 999 + 1; 
     }
 }
