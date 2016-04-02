@@ -5,14 +5,14 @@
 #define NELEMS 1000
 #define NUM_SORTS 1000
 
-typedef void(*func_t)(int *ar, int n); 
+typedef void(*func_t) (int *ar, int n); 
 
-void initialize_array(int *a, int n); 
-void generate_array(int *a, int n);
-func_t bubble_sort(int *a, int n); 
+void initialize_array (int *a, int n); 
+void generate_array (int *a, int n);
+func_t bubble_sort (int *a, int n); 
 func_t selection_sort (int *a, int n); 
 func_t quicksort (int *a, int n); 
-void display(int *ar); 
+void display (int *ar); 
 
 func_t functions[] = { (func_t)bubble_sort, (func_t)selection_sort, (func_t)quicksort };
 
@@ -44,19 +44,19 @@ int main() {
     return 0;
 }
 
-void initialize_array(int *a, int n) {
+void initialize_array (int *a, int n) {
     for (int i=0; i<n; i++) {
         a[i] = 0;
     }
 }
 
-void generate_array(int *a, int n) {
+void generate_array (int *a, int n) {
     for (int i=0; i<n; i++) {
         a[i] = rand() % 999 + 1; 
     }
 }
 
-func_t bubble_sort(int *a, int n) {
+func_t bubble_sort (int *a, int n) {
     int i, j, t;
     for (i=n-1; i>1; i--) {
         for (j=0; j<i; j++) {
@@ -103,7 +103,7 @@ func_t quicksort (int *a, int n) {
     quicksort(a + i, n - i);
 }
 
-void display(int *a) {
+void display (int *a) {
     for (int i=NELEMS-20; i<NELEMS; i++) {
         printf("%d ", a[i]);
     }
