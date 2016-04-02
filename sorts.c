@@ -29,6 +29,7 @@ int main() {
 
         begin = clock();
 
+        // call bubble_sort, selection_sort and quicksort with NELEMS elements
         for (int j=0; j<NUM_SORTS; j++) {
             functions[i](arr, NELEMS);
         }
