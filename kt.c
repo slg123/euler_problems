@@ -19,8 +19,14 @@ int main() {
     }
  
     int ar[N][N]; 
+    int sr = 1; /* starting row */
+    int sc = 1; /* starting column */
 
     initialize_board(ar);
+    print_board(ar); 
+
+    ar[sr][sc] = 1;
+
     print_board(ar); 
 
     return 0;
@@ -43,3 +49,4 @@ void print_board(int a[N][N]) {
     }
     printf("\n\n"); 
 }
+
