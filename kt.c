@@ -21,8 +21,8 @@ int main() {
     printf("%d %d\n", moves[0].x, moves[0].y);
  
     int ar[N][N]; 
-    int x = 1; /* starting row */
-    int y = 1; /* starting column */
+    int x = 1;
+    int y = 1;
 
     initialize_board(ar);
     print_board(ar); 
