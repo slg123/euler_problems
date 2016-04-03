@@ -17,6 +17,8 @@ int main() {
     for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
         printf("%d %d\n", moves[i].x, moves[i].y); 
     }
+
+    printf("%d %d\n", moves[0].x, moves[0].y);
  
     int ar[N][N]; 
     int sr = 1; /* starting row */
