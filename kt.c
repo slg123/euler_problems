@@ -30,13 +30,8 @@ int main() {
     ar[x][y] = 1;
     print_board(ar); 
     
-    //r = r + moves[2].x;
-    //c = c + moves[2].y;
     x = 3;
     y = 2;
-
-    // walk the board "by hand" - try to gain insight into how an algorithm will work.
-    // read about warnsdorff's algorithm and others for solving an NxN chessboard. 
 
     ar[x][y] = 2;
     print_board(ar);
