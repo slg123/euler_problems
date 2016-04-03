@@ -14,9 +14,6 @@ typedef struct {
 
 int main() {
     int ar[N][N]; 
-    int x = 1;
-    int y = 1;
-    ar[x][y] = 1;
 
     initialize_board(ar);
     print_board(ar); 
