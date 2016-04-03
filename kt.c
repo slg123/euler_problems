@@ -20,7 +20,6 @@ int main() {
 
     initialize_board(ar);
     print_board(ar); 
- 
     walk_board(ar); 
 
     return 0;
