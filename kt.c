@@ -35,6 +35,9 @@ int main() {
     x = 3;
     y = 2;
 
+    // walk the board "by hand" - try to gain insight into how an algorithm will work.
+    // read about warnsdorff's algorithm and others for solving an NxN chessboard. 
+
     ar[x][y] = 2;
     print_board(ar);
 
@@ -91,7 +94,6 @@ int main() {
 
     ar[x][y] = 11;
     print_board(ar);
-
 
     return 0;
 }
