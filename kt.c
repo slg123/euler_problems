@@ -12,7 +12,6 @@ typedef struct {
 } knight_move;
 
 int main() {
-
     int ar[N][N]; 
     int x = 1;
     int y = 1;
