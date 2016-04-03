@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-typedef struct {
-    int x;
-    int y;
-} knight_move;
-
 const int N = 8;
 
 void initialize_board(int a[N][N]); 
 void print_board(int a[N][N]);
+
+typedef struct {
+    int x;
+    int y;
+} knight_move;
 
 int main() {
 
@@ -21,15 +21,28 @@ int main() {
     printf("%d %d\n", moves[0].x, moves[0].y);
  
     int ar[N][N]; 
-    int sr = 1; /* starting row */
-    int sc = 1; /* starting column */
+    int x = 1; /* starting row */
+    int y = 1; /* starting column */
 
     initialize_board(ar);
     print_board(ar); 
 
-    ar[sr][sc] = 1;
-
+    ar[x][y] = 1;
     print_board(ar); 
+    
+    //r = r + moves[2].x;
+    //c = c + moves[2].y;
+    x = 3;
+    y = 2;
+
+    ar[x][y] = 2;
+    print_board(ar);
+
+    x = 5;
+    y = 1;
+
+    ar[x][y] = 3;
+    print_board(ar);
 
     return 0;
 }
@@ -51,4 +64,3 @@ void print_board(int a[N][N]) {
     }
     printf("\n\n"); 
 }
-
