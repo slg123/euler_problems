@@ -56,6 +56,42 @@ int main() {
     ar[x][y] = 5;
     print_board(ar);
 
+    x = 7;
+    y = 6;
+
+    ar[x][y] = 6;
+    print_board(ar);
+
+    x = 8;
+    y = 8;
+
+    ar[x][y] = 7;
+    print_board(ar); 
+
+    x = 6;
+    y = 7;
+
+    ar[x][y] = 8;
+    print_board(ar);
+
+    x = 4;
+    y = 8;
+
+    ar[x][y] = 9;
+    print_board(ar);
+
+    x = 2;
+    y = 7;
+
+    ar[x][y] = 10;
+    print_board(ar);
+
+    x = 1;
+    y = 5;
+
+    ar[x][y] = 11;
+    print_board(ar);
+
 
     return 0;
 }
@@ -69,9 +105,10 @@ void initialize_board(int a[N][N]) {
 }
 
 void print_board(int a[N][N]) {
+    int width = 3;
     for (int i=1; i<=N; i++) {
         for (int j=1; j<=N; j++) {
-            printf(" %d", a[i][j]); 
+            printf("%*d", width, a[i][j]); 
         }
         printf("\n"); 
     }
