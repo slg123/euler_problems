@@ -44,6 +44,19 @@ int main() {
     ar[x][y] = 3;
     print_board(ar);
 
+    x = 7;
+    y = 2;
+
+    ar[x][y] = 4;
+    print_board(ar);
+
+    x = 8;
+    y = 4;
+
+    ar[x][y] = 5;
+    print_board(ar);
+
+
     return 0;
 }
 
