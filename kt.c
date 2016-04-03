@@ -4,6 +4,7 @@ const int N = 8;
 
 void initialize_board(int a[N][N]); 
 void print_board(int a[N][N]);
+void walk_board(int a[N][N]);
 
 typedef struct {
     int x;
@@ -12,85 +13,40 @@ typedef struct {
 
 int main() {
 
-    knight_move moves[] = { 1,2, 2,1, 1,-2, 2,-1, -1,2, -2,1, -1,-2, -2,-1 };
-
-    for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
-        printf("%d %d\n", moves[i].x, moves[i].y); 
-    }
-
-    printf("%d %d\n", moves[0].x, moves[0].y);
- 
     int ar[N][N]; 
     int x = 1;
     int y = 1;
+    ar[x][y] = 1;
 
     initialize_board(ar);
     print_board(ar); 
-
-    ar[x][y] = 1;
-    print_board(ar); 
-    
-    x = 3;
-    y = 2;
-
-    ar[x][y] = 2;
-    print_board(ar);
-
-    x = 5;
-    y = 1;
-
-    ar[x][y] = 3;
-    print_board(ar);
-
-    x = 7;
-    y = 2;
-
-    ar[x][y] = 4;
-    print_board(ar);
-
-    x = 8;
-    y = 4;
-
-    ar[x][y] = 5;
-    print_board(ar);
-
-    x = 7;
-    y = 6;
-
-    ar[x][y] = 6;
-    print_board(ar);
-
-    x = 8;
-    y = 8;
-
-    ar[x][y] = 7;
-    print_board(ar); 
-
-    x = 6;
-    y = 7;
-
-    ar[x][y] = 8;
-    print_board(ar);
-
-    x = 4;
-    y = 8;
-
-    ar[x][y] = 9;
-    print_board(ar);
-
-    x = 2;
-    y = 7;
-
-    ar[x][y] = 10;
-    print_board(ar);
-
-    x = 1;
-    y = 5;
-
-    ar[x][y] = 11;
-    print_board(ar);
+ 
+    walk_board(ar); 
 
     return 0;
+}
+
+void walk_board(int a[N][N]) {
+
+    knight_move moves[] = { 1,2, 2,1, 1,-2, 2,-1, -1,2, -2,1, -1,-2, -2,-1 };
+
+    int x = 1;
+    int y = 1;
+    int m = 1;
+
+    while (m <= 64) {
+        for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
+            if (a[x][y] != 0) {
+                x = x+moves[i].x;
+                y = y+moves[i].y;
+            }
+            printf("DEBUG %d %d\n", x, y); 
+            a[x][y] = m;
+            m++;
+            print_board(a);
+        }
+        m++; 
+    }
 }
 
 void initialize_board(int a[N][N]) {
