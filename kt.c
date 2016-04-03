@@ -5,6 +5,7 @@ const int N = 8;
 void initialize_board(int a[N][N]); 
 void print_board(int a[N][N]);
 void walk_board(int a[N][N]);
+int  visited(int a[N][N], int x, int y);
 
 typedef struct {
     int x;
@@ -33,12 +34,23 @@ void walk_board(int a[N][N]) {
         for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
             x = x+moves[i].x;
             y = y+moves[i].y;
+            if (visited(a, x, y)) {
+                printf("visited %d %d\n", x, y); 
+            }
             a[x][y] = m;
             m++;
             print_board(a);
         }
     }
 }
+
+int visited(int a[N][N], int x, int y) {
+    if (a[x][y] == 0) {
+        return 0;
+    }
+    return 1;
+}
+
 
 void initialize_board(int a[N][N]) {
     for (int i=1; i<=N; i++) {
