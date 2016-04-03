@@ -26,18 +26,14 @@ int main() {
 }
 
 void walk_board(int a[N][N]) {
-
     knight_move moves[] = { 1,2, 2,1, 1,-2, 2,-1, -1,2, -2,1, -1,-2, -2,-1 };
-
     int x = 1;
     int y = 1;
     int m = 1;
-
     while (m <= 64) {
         for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
             x = x+moves[i].x;
             y = y+moves[i].y;
-            printf("DEBUG %d %d\n", x, y); 
             a[x][y] = m;
             m++;
             print_board(a);
