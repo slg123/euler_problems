@@ -35,10 +35,8 @@ void walk_board(int a[N][N]) {
 
     while (m <= 64) {
         for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
-            if (a[x][y] != 0) {
-                x = x+moves[i].x;
-                y = y+moves[i].y;
-            }
+            x = x+moves[i].x;
+            y = y+moves[i].y;
             printf("DEBUG %d %d\n", x, y); 
             a[x][y] = m;
             m++;
