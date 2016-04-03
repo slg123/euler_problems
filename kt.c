@@ -27,16 +27,16 @@ int main() {
 }
 
 void initialize_board(int a[N][N]) {
-    for (int i=1; i<=8; i++) {
-        for (int j=1; j<=8; j++) {
+    for (int i=1; i<=N; i++) {
+        for (int j=1; j<=N; j++) {
             a[i][j] = 0;
         }
     }
 }
 
 void print_board(int a[N][N]) {
-    for (int i=1; i<=8; i++) {
-        for (int j=1; j<=8; j++) {
+    for (int i=1; i<=N; i++) {
+        for (int j=1; j<=N; j++) {
             printf(" %d", a[i][j]); 
         }
         printf("\n"); 
