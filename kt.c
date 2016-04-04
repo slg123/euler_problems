@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 const int N = 8;
 
@@ -31,9 +32,7 @@ void walk_board(int a[N][N]) {
         for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
             x = x+moves[i].x;
             y = y+moves[i].y;
-            if (visited(a, x, y)) {
-                printf("visited %d %d\n", x, y); 
-            }
+            if (visited(a, x, y)) { printf("visited %d %d\n", x, y); }
             a[x][y] = m;
             m++;
         }
@@ -47,7 +46,6 @@ int visited(int a[N][N], int x, int y) {
     }
     return 1;
 }
-
 
 void initialize_board(int a[N][N]) {
     for (int i=1; i<=N; i++) {
