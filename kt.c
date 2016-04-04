@@ -36,8 +36,8 @@ void walk_board(int a[N][N]) {
             }
             a[x][y] = m;
             m++;
-            print_board(a);
         }
+        print_board(a);
     }
 }
 
