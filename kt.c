@@ -21,10 +21,6 @@ int main() {
 
     knight_move moves[] = { 2,1, 1,2, -1,2, -2,1, -2,-1, -1,-2, 1,-2, 2,-1 };
 
-    for (int i=0; i<8; i++) {
-        printf("%d %d\n", moves[i].x, moves[i].y); 
-    }
-
     int xm[8];
     int ym[8];
 
