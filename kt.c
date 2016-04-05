@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 const int N = 8;
 
 void initialize_board(int a[N][N]); 
 void print_board(int a[N][N]);
-void walk_board(int a[N][N]);
-int  visited(int a[N][N], int x, int y);
+bool walk_board(int x, int y, int m, int a[N][N], int xm[], int ym[]);
+bool can_move(int x, int y, int a[N][N]);
 
 typedef struct {
     int x;
@@ -15,50 +16,74 @@ typedef struct {
 
 int main() {
     int ar[N][N]; 
-
     initialize_board(ar);
-    print_board(ar); 
-    walk_board(ar); 
+    ar[0][0] = 0; 
+
+    knight_move moves[] = { 2,1, 1,2, -1,2, -2,1, -2,-1, -1,-2, 1,-2, 2,-1 };
+
+    for (int i=0; i<8; i++) {
+        printf("%d %d\n", moves[i].x, moves[i].y); 
+    }
+
+    int xm[8];
+    int ym[8];
+
+    for (int i=0; i<8; i++) {
+        xm[i] = moves[i].x;
+        ym[i] = moves[i].y;
+    }
+
+    if (walk_board(0, 0, 1, ar, xm, ym) == false) {
+        printf("no solution.\n"); 
+        exit(-1); 
+    } else {
+        print_board(ar); 
+        exit(42);
+    }
 
     return 0;
 }
 
-void walk_board(int a[N][N]) {
-    knight_move moves[] = { 1,2, 2,1, 1,-2, 2,-1, -1,2, -2,1, -1,-2, -2,-1 };
-    int x = 1;
-    int y = 1;
-    int m = 1;
-    while (m <= 64) {
-        for (int i=0; i<sizeof(moves)/sizeof(moves[0]); i++) {
-            x = x+moves[i].x;
-            y = y+moves[i].y;
-            if (visited(a, x, y)) { printf("visited %d %d\n", x, y); }
-            a[x][y] = m;
-            m++;
-        }
-        print_board(a);
+bool walk_board(int x, int y, int m, int a[N][N], int xm[], int ym[]) {
+
+    int next_x; 
+    int next_y; 
+
+    if (m == N*N) {
+        return true;
     }
+
+    for (int i=0; i<8; i++) {
+        next_x = x + xm[i]; 
+        next_y = y + ym[i]; 
+        if (can_move(next_x, next_y, a)) {
+            a[next_x][next_y] = m;
+            if (walk_board(next_x, next_y, m+1, a, xm, ym) == true) {
+                return true;
+            } else {
+                a[next_x][next_y] = -1;
+            }
+        }
+    }
+    return false;
 }
 
-int visited(int a[N][N], int x, int y) {
-    if (a[x][y] == 0) {
-        return 0;
-    }
-    return 1;
+bool can_move(int x, int y, int a[N][N]) {
+    return(x>=0 && x<N && y>=0 && y<N && a[x][y] == -1);  
 }
 
 void initialize_board(int a[N][N]) {
-    for (int i=1; i<=N; i++) {
-        for (int j=1; j<=N; j++) {
-            a[i][j] = 0;
+    for (int i=0; i<N; i++) {
+        for (int j=0; j<N; j++) {
+            a[i][j] = -1;
         }
     }
 }
 
 void print_board(int a[N][N]) {
     int width = 3;
-    for (int i=1; i<=N; i++) {
-        for (int j=1; j<=N; j++) {
+    for (int i=0; i<N; i++) {
+        for (int j=0; j<N; j++) {
             printf("%*d", width, a[i][j]); 
         }
         printf("\n"); 
