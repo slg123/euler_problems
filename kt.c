@@ -17,7 +17,7 @@ typedef struct {
 int main() {
     int ar[N][N]; 
     initialize_board(ar);
-    ar[0][0] = 1; 
+    ar[0][0] = 0; 
 
     knight_move moves[] = { 2,1, 1,2, -1,2, -2,1, -2,-1, -1,-2, 1,-2, 2,-1 };
 
