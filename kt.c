@@ -21,10 +21,10 @@ int main() {
 
     knight_move moves[] = { 2,1, 1,2, -1,2, -2,1, -2,-1, -1,-2, 1,-2, 2,-1 };
 
-    int xm[8];
-    int ym[8];
+    int xm[N];
+    int ym[N];
 
-    for (int i=0; i<8; i++) {
+    for (int i=0; i<N; i++) {
         xm[i] = moves[i].x;
         ym[i] = moves[i].y;
     }
@@ -49,7 +49,7 @@ bool walk_board(int x, int y, int m, int a[N][N], int xm[], int ym[]) {
         return true;
     }
 
-    for (int i=0; i<8; i++) {
+    for (int i=0; i<N; i++) {
         next_x = x + xm[i]; 
         next_y = y + ym[i]; 
         if (can_move(next_x, next_y, a)) {
@@ -60,6 +60,7 @@ bool walk_board(int x, int y, int m, int a[N][N], int xm[], int ym[]) {
                 a[next_x][next_y] = -1;
             }
         }
+        //print_board(a);
     }
     return false;
 }
