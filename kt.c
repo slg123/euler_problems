@@ -17,7 +17,7 @@ typedef struct {
 int main() {
     int ar[N][N]; 
     initialize_board(ar);
-    ar[0][0] = 0; 
+    ar[0][0] = 1; 
 
     knight_move moves[] = { 2,1, 1,2, -1,2, -2,1, -2,-1, -1,-2, 1,-2, 2,-1 };
 
@@ -60,7 +60,6 @@ bool walk_board(int x, int y, int m, int a[N][N], int xm[], int ym[]) {
                 a[next_x][next_y] = -1;
             }
         }
-        //print_board(a);
     }
     return false;
 }
