@@ -36,7 +36,6 @@ int main() {
         print_board(ar); 
         exit(42);
     }
-
     return 0;
 }
 
