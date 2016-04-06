@@ -41,7 +41,6 @@ int main() {
 }
 
 bool walk_board(int x, int y, int m, int a[N][N], int xm[], int ym[]) {
-
     int next_x; 
     int next_y; 
 
