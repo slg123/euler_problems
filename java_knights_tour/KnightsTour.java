@@ -3,7 +3,6 @@ public class KnightsTour {
     public static int N = 8;
 
     public static int[][] ar  = new int[8][8];
-    public static int[][] sol = new int[8][8];
 
     static int[] xm = { 2, 1, -1, -2, -2, -1,  1,  2 };
     static int[] ym = { 1, 2,  2,  1, -1, -2, -2, -1 };
