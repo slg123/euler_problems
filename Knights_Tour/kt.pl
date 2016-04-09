@@ -21,7 +21,6 @@ sub initialize_board {
 sub print_board {
     for (my $i=0; $i<$N; $i++) {
         for (my $j=0; $j<$N; $j++) {
-            #print " $ar[$i][$j]";
             printf "%*d", 3, $ar[$i][$j];
         }
         print "\n";
