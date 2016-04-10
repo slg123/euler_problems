@@ -4,10 +4,10 @@ use strict;
 use warnings;
 
 sub get_decimal {
+    my $n = shift;
     my $d = shift;
-    my $n = 1;
-    my $count=0;
-    while ($n%$d != 0) {
+    my $count = 0;
+    while ($n % $d != 0) {
         my $first = $n%$d;
         $n *= 10;
         my $val = $n % $d;
@@ -25,6 +25,7 @@ sub get_decimal {
 
 for (my $i=1; $i<=1000; $i++) {
     print "\n"; 
-    get_decimal($i); 
+    my $n = 1;
+    print get_decimal($n, $i); 
 }
 
