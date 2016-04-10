@@ -26,7 +26,7 @@ sub get_decimal {
     }
 }
 
-sub longest_repeat {
+sub longest_repeating_sequence {
     # find the longest repeating integer sequence
     # for the fractions from 1/1 to 1/1000
 }
