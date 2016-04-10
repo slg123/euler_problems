@@ -6,12 +6,15 @@ use warnings;
 sub get_decimal {
     my $n = shift;
     my $d = shift;
+    if ($d == 0) {
+        exit;
+    }
     my $count = 0;
     while ($n % $d != 0) {
-        my $first = $n%$d;             
+        my $first = $n%$d;      # need first divisor       
         $n *= 10;
-        my $val = $n % $d;  
-        my $decimal = ($val * 10) / $d;
+        my $remainder = $n % $d;  
+        my $decimal = ($remainder * 10) / $d;
         if ($count == 0) {   
             print $first;
         }
