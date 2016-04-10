@@ -8,16 +8,16 @@ sub get_decimal {
     my $d = shift;
     my $count = 0;
     while ($n % $d != 0) {
-        my $first = $n%$d;
+        my $first = $n%$d;             
         $n *= 10;
-        my $val = $n % $d;
+        my $val = $n % $d;  
         my $decimal = ($val * 10) / $d;
-        if ($count == 0) {
+        if ($count == 0) {   
             print $first;
         }
         print int($decimal);
         $count++;
-        if ($count > 200) {
+        if ($count > 200) {            
             return;
         }
     }
