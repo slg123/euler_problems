@@ -17,10 +17,15 @@ sub get_decimal {
         }
         print int($decimal);
         $count++;
-        if ($count > 200) {  # some go forever. cap it at 200.          
+        if ($count > 200) {  
             return;
         }
     }
+}
+
+sub longest_repeat {
+    # find the longest repeating integer sequence
+    # for the fractions from 1/1 to 1/1000
 }
 
 for (my $i=1; $i<=1000; $i++) {
