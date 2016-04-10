@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-sub get_decimal {
+sub fraction_to_decimal {
     my $n = shift;
     my $d = shift;
     if ($d == 0) {
@@ -34,6 +34,6 @@ sub longest_repeating_sequence {
 for (my $i=1; $i<=1000; $i++) {
     print "\n"; 
     my $n = 1;
-    print get_decimal($n, $i); 
+    print fraction_to_decimal($n, $i); 
 }
 
