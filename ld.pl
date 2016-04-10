@@ -17,7 +17,7 @@ sub get_decimal {
         }
         print int($decimal);
         $count++;
-        if ($count > 200) {            
+        if ($count > 200) {  # some go forever. cap it at 200.          
             return;
         }
     }
