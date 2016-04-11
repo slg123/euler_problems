@@ -16,7 +16,7 @@ sub fraction_to_decimal {
         my $remainder = $n % $d;  
         my $decimal = ($remainder * 10) / $d;
         if ($count == 0) {   
-            print $first;
+            print '0.'.$first;
         }
         print int($decimal);
         $count++;
