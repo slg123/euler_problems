@@ -11,13 +11,9 @@ sub fraction_to_decimal {
     }
     my $count = 0;
     while ($n % $d != 0) {
-        my $first = $n%$d;      # need first divisor       
         $n *= 10;
         my $remainder = $n % $d;  
         my $decimal = ($remainder * 10) / $d;
-        if ($count == 0) {   
-            print '0.'.$first;
-        }
         print int($decimal);
         $count++;
         if ($count > 200) {  
