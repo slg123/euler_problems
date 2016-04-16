@@ -78,7 +78,9 @@ void print_board(int a[N][N]) {
     int width = 3;
     for (int i=0; i<N; i++) {
         for (int j=0; j<N; j++) {
+            if (i%2==j%2) printf("\e[7m"); 
             printf("%*d", width, a[i][j]); 
+            printf("\e[0m"); 
         }
         printf("\n"); 
     }
