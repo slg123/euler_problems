@@ -48,7 +48,9 @@ public class KnightsTour {
     public static void print_board() {
         for (int i=0; i<N; i++) {
             for (int j=0; j<N; j++) {
+                if (i%2==j%2) System.out.printf("\u001b[7m");
                 System.out.printf("%3d", ar[i][j]);
+                System.out.printf("\u001b[0m");
             }
             System.out.println(); 
         }
