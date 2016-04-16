@@ -8,12 +8,12 @@ my $N = 8;
 my @xm = ( 2, 1, -1, -2, -2, -1,  1,  2 );
 my @ym = ( 1, 2,  2,  1, -1, -2, -2, -1 );
 
-my @ar = ();
+my @board = ();
 
 sub initialize_board {
     for (my $i=0; $i<$N; $i++) {
         for (my $j=0; $j<$N; $j++) {
-            $ar[$i][$j] = -1;
+            $board[$i][$j] = -1;
         }
     }
 }
@@ -21,7 +21,9 @@ sub initialize_board {
 sub print_board {
     for (my $i=0; $i<$N; $i++) {
         for (my $j=0; $j<$N; $j++) {
-            printf "%*d", 3, $ar[$i][$j];
+            print "\e[7m" if ($i%2==$j%2); 
+            printf "%*d", 3, $board[$i][$j];
+            print "\e[0m"
         }
         print "\n";
     }
@@ -30,7 +32,7 @@ sub print_board {
 sub can_move {
     my $x = shift;
     my $y = shift;
-    return ($x>=0 && $x<$N && $y>=0 && $y<$N && $ar[$x][$y] == -1); 
+    return ($x>=0 && $x<$N && $y>=0 && $y<$N && $board[$x][$y] == -1); 
 }
 
 sub walk_board {
@@ -50,11 +52,11 @@ sub walk_board {
         $next_y = $y + $ym[$i];
 
         if (can_move($next_x, $next_y)) {
-            $ar[$next_x][$next_y] = $m;
+            $board[$next_x][$next_y] = $m;
             if (walk_board($next_x, $next_y, $m+1) == 1) {
                 return 1;
             } else {
-                $ar[$next_x][$next_y] = -1;
+                $board[$next_x][$next_y] = -1;
             }
         }
     }
@@ -63,7 +65,7 @@ sub walk_board {
 
 sub main {
     initialize_board();
-    $ar[0][0] = 0;
+    $board[0][0] = 0;
     if (walk_board(0, 0, 1) == 0) {
         print "no solution.";
     } else {
