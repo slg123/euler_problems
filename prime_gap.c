@@ -12,8 +12,6 @@ int main() {
         if (is_prime(i)) {
             curr = i;
             prime_gap = prime_distance(prev, curr);
-            //printf("prime gap between %llu and %llu: %llu\n", prev, curr, prime_gap);
-            //prev = curr;
             if (prime_gap > 100) {
                 printf("prime gap > 100 for %llu and %llu: %llu\n", prev, curr, prime_gap); 
             }
