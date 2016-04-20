@@ -9,7 +9,7 @@ int main() {
     unsigned long long prev=0;
     unsigned long long prime_gap=0;
 
-    for (unsigned long long i=0; i<ULLONG_MAX; i++) {
+    for (unsigned long long i=0; i<=ULLONG_MAX; i++) {
         if (is_prime(i)) {
             curr = i;
             prime_gap = prime_distance(prev, curr);
