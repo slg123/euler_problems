@@ -9,7 +9,6 @@ int main() {
     unsigned long long curr=0;
     unsigned long long prev=0;
     unsigned long long prime_gap=0;
-    unsigned long long largest=0;
 
     FILE *output = fopen("sparse_primes.dat", "w"); 
 
@@ -18,9 +17,8 @@ int main() {
             curr = i;
             prime_gap = prime_distance(prev, curr);
             if (prime_gap > 100) {
-                printf("prime gap between %llu and %llu = %llu\n", prev, curr, prime_gap); 
-                fprintf(output, "prime gap between %llu and %llu = %llu\n", prev, curr, prime_gap); 
-                if (prime_gap > largest) largest = prime_gap; 
+                printf("%llu - %llu: %llu\n", prev, curr, prime_gap);
+                fprintf(output, "%llu - %llu: %llu\n", prev, curr, prime_gap);
             }
             prev = curr;
         }
