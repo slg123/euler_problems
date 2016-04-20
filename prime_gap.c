@@ -17,6 +17,7 @@ int main() {
             curr = i;
             prime_gap = prime_distance(prev, curr);
             if (prime_gap > 100) {
+                printf("prime gap between %llu and %llu = %llu\n", prev, curr, prime_gap); 
                 fprintf(output, "prime gap between %llu and %llu = %llu\n", prev, curr, prime_gap); 
             }
             prev = curr;
