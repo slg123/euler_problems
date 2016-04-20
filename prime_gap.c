@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <limits.h>
 
 int is_prime(unsigned long long n); 
 unsigned long long prime_distance(unsigned long long prev, unsigned long long curr);
@@ -8,7 +9,7 @@ int main() {
     unsigned long long prev=0;
     unsigned long long prime_gap=0;
 
-    for (unsigned long long i=0; i<9000000000; i++) {
+    for (unsigned long long i=0; i<ULLONG_MAX; i++) {
         if (is_prime(i)) {
             curr = i;
             prime_gap = prime_distance(prev, curr);
