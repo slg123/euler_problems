@@ -14,8 +14,6 @@ typedef struct {
     int y;
 } knight_move;
 
-char[N][N]; 
-
 int main() {
     int ar[N][N]; 
     initialize_board(ar);
@@ -39,7 +37,6 @@ int main() {
         exit(42);
     }
 
-    to_algebraic(ar);
     print_board(ar);
 
     return 0;
