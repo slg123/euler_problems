@@ -42,7 +42,8 @@ func main() {
     // Mark the starting square, 0,0 as value 0.
     ar[0][0] = 0
 
-
+    // Walk the board until we arrive at a solution - if we don't get
+    // a solved tour just print a message saying No solution.
     if (walk_board(0, 0, 1, ar, xm, ym) == false) {
         fmt.Printf("No solution.\n")
     } else {
@@ -65,12 +66,17 @@ func walk_board(x int, y int, m int, ar [N][N]int, xm[] int, ym[] int) (bool) {
     for i := 0; i<N; i++ {
         next_x = x + xm[i]
         next_y = y + ym[i]
+        //
+        // Visit each square until a complete tour is found. 
+        //
         if (can_move(next_x, next_y, ar)) {
             ar[next_x][next_y] = m
             if (walk_board(next_x, next_y, m+1, ar, xm, ym) == true) {
                 print_board(ar)
                 return true
             } else {
+                // If we didn't find a tourable square, mark it as -1 
+                // for backtracking.
                 ar[next_x][next_y] = -1
             }
         }
