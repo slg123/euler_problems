@@ -34,7 +34,7 @@ func main() {
 
 //
 // walk_board - walk a Knight chess piece on a solved knights
-// tour of an 8x8 chessboard
+// tour of an 8x8 chessboard.
 //
 func walk_board(x int, y int, m int, ar [N][N]int, xm[] int, ym[] int) (bool) {
     var next_x int
