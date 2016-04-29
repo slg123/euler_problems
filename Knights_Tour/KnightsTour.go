@@ -64,7 +64,7 @@ func walk_board(x int, y int, m int, board [N][N]int, xmoves[] int, ymoves[] int
     for i := 0; i<N; i++ {
         next_x = x + xmoves[i]
         next_y = y + ymoves[i]
-        if (can_move(next_x, next_y, )) {
+        if (can_move(next_x, next_y, board)) {
             board[next_x][next_y] = m
             if (walk_board(next_x, next_y, m+1, board, xmoves, ymoves) == true) {
                 print_board(board)
