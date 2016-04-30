@@ -12,6 +12,7 @@ void display_algebraic_chessboard(char board[N][N]);
 int main() {
     char board[N][N]; 
 
+    // will implement later - these are queen x, y moves. 
     int queen_xmoves[] = { 1, 2, 3, 4, 5, 6, 7, 8, -1, -2, -3, -4, -5, -6, -7, -8 };
     int queen_ymoves[] = { 1, 2, 3, 4, 5, 6, 7, 8, -1, -2, -3, -4, -5, -6, -7, -8 }; 
 
