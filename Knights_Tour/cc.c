@@ -38,16 +38,6 @@ void to_algebraic(char board[N][N]) {
         printf("\n"); 
     }
 
-    //int i, j, s, k;
-    //for (i=1, s=N; i<N, s>=0; i++, s--) {
-    //    for (j=0; j<N; j++) { 
-    //        if (i>1) {
-    //            printf("%c%c", ranks[s], files[j]); 
-    //        }
-    //    }
-    //    printf("\n"); 
-    //}
-
 }
 
 void display_queen_moves(char board[N][N]) {
