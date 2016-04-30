@@ -25,10 +25,14 @@ int main() {
 }
 
 void to_algebraic(char board[N][N]) {
-    int i, j;
+
+    char ranks[N] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
+    char files[N] = { '1', '2', '3', '4', '5', '6', '7', '8' };
+
+    int i, j, s;
     for (i=0; i<N; i++) {
-        for (j=0; j<N; j++) {
-            printf("%d%d", i, j); 
+        for (j=0; j<N; j++) { 
+            printf("%c%c", ranks[i], files[j]); 
         }
         printf("\n"); 
     }
