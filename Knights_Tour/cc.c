@@ -30,12 +30,15 @@ void to_algebraic(char board[N][N]) {
     char files[N] = { '1', '2', '3', '4', '5', '6', '7', '8' };
 
     int i, j, s;
-    for (i=0, s=N; i<N, s>=0; i++, s--) {
+    for (i=1, s=N; i<N, s>=0; i++, s--) {
         for (j=0; j<N; j++) { 
-            printf("%c%c", ranks[s], files[j]); 
+            if (i>1) {
+                printf("%c%c", ranks[s], files[j]); 
+            }
         }
         printf("\n"); 
     }
+    printf("\n\n"); 
 }
 
 void display_queen_moves(char board[N][N]) {
