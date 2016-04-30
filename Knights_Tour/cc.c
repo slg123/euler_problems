@@ -7,6 +7,7 @@ void initialize_board(char board[N][N]);
 void print_board(char board[N][N]); 
 void display_queen_moves(char board[N][N]); 
 char *to_algebraic(int x, int y); 
+void display_algebraic_chessboard(char board[N][N]);
 
 int main() {
     char board[N][N]; 
@@ -21,6 +22,7 @@ int main() {
     print_board(board); 
     display_queen_moves(board); 
     print_board(board); 
+    display_algebraic_chessboard(board); 
     printf("\n\n"); 
 
     return 0;
@@ -28,8 +30,8 @@ int main() {
 
 char *to_algebraic(int x, int y) {
 
-    char ranks[N] = { 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a' };
-    char files[N] = { '1', '2', '3', '4', '5', '6', '7', '8' };
+    char rows[N] = { '8', '7', '6', '5', '4', '3', '2', '1' };
+    char cols[N] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
 
     char *algebraic_position;
     char pos[2]; 
@@ -38,8 +40,8 @@ char *to_algebraic(int x, int y) {
     for (i=0; i<N; i++) {
         for (j=0; j<N; j++) {
             if (i==x && j==y) {
-                pos[0] = ranks[i];
-                pos[1] = files[j];
+                pos[0] = cols[j];
+                pos[1] = rows[i];
             }
         }
     }
@@ -48,6 +50,21 @@ char *to_algebraic(int x, int y) {
     return algebraic_position;
 
 }
+
+void display_algebraic_chessboard(char board[N][N]) {
+
+    char rows[N] = { '8', '7', '6', '5', '4', '3', '2', '1' };
+    char cols[N] = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' };
+
+    int i, j;
+    for (i=0; i<N; i++) {
+        for (j=0; j<N; j++) {
+            printf("%c%c", cols[j], rows[i]); 
+        }
+        printf("\n"); 
+    }
+}
+
 
 void display_queen_moves(char board[N][N]) {
     int i, j;
