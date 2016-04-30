@@ -6,7 +6,7 @@
 void initialize_board(char board[N][N]);
 void print_board(char board[N][N]); 
 void display_queen_moves(char board[N][N]); 
-void to_algebraic(char board[N][N]);
+char *to_algebraic(int x, int y); 
 
 int main() {
     char board[N][N]; 
@@ -18,25 +18,34 @@ int main() {
     board[3][3] = 'q'; 
     print_board(board); 
     display_queen_moves(board); 
-    printf("\n"); 
-    to_algebraic(board); 
+    print_board(board); 
+    display_queen_moves(board); 
+    print_board(board); 
     printf("\n\n"); 
 
     return 0;
 }
 
-void to_algebraic(char board[N][N]) {
+char *to_algebraic(int x, int y) {
 
     char ranks[N] = { 'h', 'g', 'f', 'e', 'd', 'c', 'b', 'a' };
     char files[N] = { '1', '2', '3', '4', '5', '6', '7', '8' };
 
+    char *algebraic_position;
+    char pos[2]; 
+
     int i, j;
     for (i=0; i<N; i++) {
         for (j=0; j<N; j++) {
-            printf("%c%c", ranks[i], files[j]); 
+            if (i==x && j==y) {
+                pos[0] = ranks[i];
+                pos[1] = files[j];
+            }
         }
-        printf("\n"); 
     }
+    algebraic_position = pos; 
+    algebraic_position[2] = '\0'; 
+    return algebraic_position;
 
 }
 
@@ -45,7 +54,7 @@ void display_queen_moves(char board[N][N]) {
     for (i=0; i<N; i++) {
         for (j=0; j<N; j++) {
             if (board[i][j] == 'q') {
-                printf("\nqueen is located at square: %d %d\n", i, j); 
+                printf("\nqueen is located at square: %s\n", to_algebraic(i, j)); 
             }
         }
     }
