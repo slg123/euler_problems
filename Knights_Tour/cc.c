@@ -125,6 +125,9 @@ void queen_move(char board[N][N]) {
     int queen_ymoves[] = { 1, 2, 3, 4, 5, 6, 7, 8, -1, -2, -3, -4, -5, -6, -7, -8 }; 
 }
 
+//
+// place the chess piece in the next location supplied by the user.
+//
 void move(char *next_move, char chess_piece, char board[N][N]) {
     int i, j;
 
@@ -142,9 +145,6 @@ void move(char *next_move, char chess_piece, char board[N][N]) {
 
     int next_x, next_y; 
 
-    //
-    // place the chess piece in the next location supplied by the user.
-    //
     next_x = next_move[0]; 
     next_y = next_move[1]; 
 
