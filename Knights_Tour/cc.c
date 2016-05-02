@@ -6,10 +6,10 @@
 void initialize_board(char board[N][N]);
 void display_board(char board[N][N]); 
 void display_queen_moves(char board[N][N]); 
-char *to_algebraic(int x, int y); 
 void display_algebraic_chessboard(char board[N][N]);
 void queen_move(char board[N][N]);
-void move(char next_move[], char chess_piece, char board[N][N]); 
+char *move(char next_move[], char chess_piece, char board[N][N]); 
+char *to_algebraic(int x, int y); 
 
 int main() {
     char board[N][N]; 
@@ -128,9 +128,8 @@ void queen_move(char board[N][N]) {
 //
 // place the chess piece in the next location supplied by the user.
 //
-void move(char *next_move, char chess_piece, char board[N][N]) {
+char *move(char *next_move, char chess_piece, char board[N][N]) {
     int i, j;
-
     //
     // replace the former location of the chess piece with a '.' character
     // to denote that it is now an empty square.
@@ -147,15 +146,4 @@ void move(char *next_move, char chess_piece, char board[N][N]) {
 
     next_x = next_move[0]; 
     next_y = next_move[1]; 
-
-    board[next_x][next_y] = chess_piece; 
 }
-
-
-
-
-
-
-
-
-
