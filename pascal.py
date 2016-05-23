@@ -15,6 +15,13 @@ for i in range(n):
 
 """ adapted from the following perl:
 
+ http://www.perlmonks.org/?node_id=175586
+
+ Author: Ton Hospel, original Perl solution. 
+
+ This solution eschews the binomial theorem for a simpler (and faster) method - adding
+ numbers from the previous row. 
+
 sub ton_pascal {
     my $rows = shift;
     my $last_row = [];
