@@ -14,6 +14,6 @@ def pascals_triangle(n):
         print this_row
 
 if __name__ == "__main__":
-    pascals_triangle(13)
+    pascals_triangle(20)
 
 
