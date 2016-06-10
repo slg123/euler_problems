@@ -33,7 +33,7 @@ func main() {
 
 	var whiskeyVolume = c - s
 	fmt.Printf("Volume of Joe's whiskey: %.3f\n", whiskeyVolume)
-	fmt.Printf("Volume of Joe's whiskey (in liters): %.3f\n", cubicCentimetersToLiters(whiskeyVolume))
+	fmt.Printf("Volume of Joe's whiskey (in ml): %.3f\n", cubicCentimetersToLiters(whiskeyVolume))
 }
 
 func cubicCentimetersToLiters(n float64) (float64) {
