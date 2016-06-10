@@ -2,8 +2,8 @@
  *  joes_old_fashioned - Joe has a "whiskey ball" ice cube
  *                       in a tumbler that is full of
  *                       his favorite bourbon. The tumbler
- *                       is 80 cm high with a diameter of 70 cm.
- *                       The radius of the ice whiskey ball is 33cm.
+ *                       is 80 mm high with a diameter of 70 mm.
+ *                       The radius of the ice whiskey ball is 33mm.
  *                       What is the volume of the whiskey in 
  *                       this delightful and refreshing beverage?
  *
