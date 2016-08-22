@@ -6,7 +6,7 @@ import "fmt"
 // KnightsTour.go - perform a Knights tour in golang.
 //
 // example:
-//     ./KnightsTour | head -8
+//	 ./KnightsTour | head -8
 //
 //   0 59 38 33 30 17  8 63
 //  37 34 31 60  9 62 29 16
@@ -23,30 +23,30 @@ import "fmt"
 const N = 8
 
 func main() {
-    // chessboard of NxN squares
-    board := [N][N]int{}
+	// chessboard of NxN squares
+	board := [N][N]int{}
 
-    // all potential x and y moves 
-    xmoves := []int{ 2, 1, -1, -2, -2, -1,  1,  2 }
-    ymoves := []int{ 1, 2,  2,  1, -1, -2, -2, -1 }
+	// all potential x and y moves 
+	xmoves := []int{ 2, 1, -1, -2, -2, -1,  1,  2 }
+	ymoves := []int{ 1, 2,  2,  1, -1, -2, -2, -1 }
 
-    //
-    // Initialize board with values of -1 to denote unvisited squares.
-    //
-    for i := 0; i<N; i++ {
-        for j := 0; j<N; j++ {
-            board[i][j] = -1
-        }
-    }
+	//
+	// Initialize board with values of -1 to denote unvisited squares.
+	//
+	for i := 0; i<N; i++ {
+		for j := 0; j<N; j++ {
+			board[i][j] = -1
+		}
+	}
 
-    // Mark the starting square, 0,0 as value 0.
-    board[0][0] = 0
+	// Mark the starting square, 0,0 as value 0.
+	board[0][0] = 0
 
-    if (walk_board(0, 0, 1, board, xmoves, ymoves) == false) {
-        fmt.Printf("No solution.\n")
-    } else {
-        print_board(board)
-    }
+	if (walk_board(0, 0, 1, board, xmoves, ymoves) == false) {
+		fmt.Printf("No solution.\n")
+	} else {
+		print_board(board)
+	}
 }
 
 //
@@ -54,27 +54,27 @@ func main() {
 // tour of an 8x8 chessboard.
 //
 func walk_board(x int, y int, m int, board [N][N]int, xmoves[] int, ymoves[] int) (bool) {
-    var next_x int
-    var next_y int
+	var next_x int
+	var next_y int
 
-    if (m == N*N) {
-        return true
-    }
+	if (m == N*N) {
+		return true
+	}
 
-    for i := 0; i<N; i++ {
-        next_x = x + xmoves[i]
-        next_y = y + ymoves[i]
-        if (can_move(next_x, next_y, board)) {
-            board[next_x][next_y] = m
-            if (walk_board(next_x, next_y, m+1, board, xmoves, ymoves) == true) {
-                print_board(board)
-                return true
-            } else {
-                board[next_x][next_y] = -1
-            }
-        }
-    }
-    return false
+	for i := 0; i<N; i++ {
+		next_x = x + xmoves[i]
+		next_y = y + ymoves[i]
+		if (can_move(next_x, next_y, board)) {
+			board[next_x][next_y] = m
+			if (walk_board(next_x, next_y, m+1, board, xmoves, ymoves) == true) {
+				print_board(board)
+				return true
+			} else {
+				board[next_x][next_y] = -1
+			}
+		}
+	}
+	return false
 }
 
 //
@@ -82,21 +82,21 @@ func walk_board(x int, y int, m int, board [N][N]int, xmoves[] int, ymoves[] int
 // back to -1 via backtracking or if the square is unexplored.
 //
 func can_move(x int, y int, board [N][N]int) (bool) {
-    return(x>=0 && x<N && y>=0 && y<N && board[x][y] == -1)
+	return(x>=0 && x<N && y>=0 && y<N && board[x][y] == -1)
 }
 
 //
 // Print an NxN chessboard. 
 //
 func print_board(board [N][N]int) {
-    for i := 0; i<N; i++ {
-        for j := 0; j<N; j++ {
-            if (i%2==j%2) {
-                fmt.Printf("\u001b[7m")  // Ansi reverse video for white squares.
-            }
-            fmt.Printf("%3d", board[i][j])
-            fmt.Printf("\u001b[0m")      // Ansi sane video for black squares.
-        }
-        fmt.Printf("\n")
-    }
+	for i := 0; i<N; i++ {
+		for j := 0; j<N; j++ {
+			if (i%2==j%2) {
+				fmt.Printf("\u001b[7m")  // Ansi reverse video for white squares.
+			}
+			fmt.Printf("%3d", board[i][j])
+			fmt.Printf("\u001b[0m")	  // Ansi sane video for black squares.
+		}
+		fmt.Printf("\n")
+	}
 }
