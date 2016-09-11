@@ -27,11 +27,13 @@ def makeHistogram(n):
 
     return ''.join(histogram)
 
+
 numFreq = {}
 for k in range(1, 55):
     numFreq[k] = getFreq(k)
 
 sortedByValue = OrderedDict(sorted(numFreq.items(), key=lambda x: x[1]))
+
 
 for k, v in sortedByValue.items():
     if k < 10:
