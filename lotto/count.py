@@ -21,13 +21,13 @@ def getFreq(n):
 
 
 def makeHistogram(n):
-    histogram = ['*' for i in range(n)]
-    return ''.join(histogram)
+    return ''.join(['*' for i in range(n)])
 
 
 numFreq = {}
 for k in range(1, 55):
     numFreq[k] = getFreq(k)
+
 
 sortedByValue = OrderedDict(sorted(numFreq.items(), key=lambda x: x[1]))
 
