@@ -21,10 +21,7 @@ def getFreq(n):
 
 
 def makeHistogram(n):
-    histogram = []
-    for i in range(n):
-        histogram.append("*")
-
+    histogram = ['*' for i in range(n)]
     return ''.join(histogram)
 
 
