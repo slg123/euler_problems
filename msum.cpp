@@ -29,7 +29,7 @@ long long ullrand() {
     unsigned long long rand2 = abs(rand());
     rand1 = rand1 << (sizeof(int)*8);
     unsigned long long randULL = (rand1 | rand2);
-    return randULL;
+    return randULL/10; // do this else number is too large to sum for std long long type
 }
     
 
@@ -93,6 +93,8 @@ int main() {
     std::cout << NMSECS << " column order sums completed in : " << (std::clock() - start_col) / (double)(CLOCKS_PER_SEC / 1000) 
         << " milliseconds." << std::endl;
 
+    std::cout << "row    major order sum: " << rowSumMatrix(m) << std::endl;
+    std::cout << "column major order sum: " << colSumMatrix(m) << std::endl;
 
     return 0;
 }
