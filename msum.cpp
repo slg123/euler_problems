@@ -9,7 +9,6 @@ long long rowSumMatrix(long long ar[6][6]) {
         for (long long c = 0; c < 6; c++) {
             sum += ar[r][c];
         }
-    
     }
     return sum;
 }
