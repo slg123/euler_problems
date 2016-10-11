@@ -90,7 +90,7 @@ func can_move(x int, y int, board [N][N]int) bool {
 }
 
 //
-// Print an NxN chessboard.
+// Print a solved NxN chessboard.
 //
 func print_board(board [N][N]int) {
 	lines := 0
@@ -104,7 +104,7 @@ func print_board(board [N][N]int) {
 		}
 		fmt.Printf("\n")
 		lines++
-		if lines == 7 {
+		if lines == N {
 			os.Exit(0)
 		}
 	}
