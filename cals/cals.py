@@ -3,9 +3,12 @@
 import csv
 
 def get_totals():
-    with open("calories.csv","r") as f:
-        total_cals    = 0
-        total_protein = 0
+
+    total_cals    = 0
+    total_protein = 0
+
+    with open("calories.csv", "r") as f:
+
         for row in csv.reader(f):
             total_cals += (int(row[2]) * int(row[0]))
             total_protein += (int(row[3]) * int(row[0]))
