@@ -15,7 +15,7 @@ func b(j int) int {
 }
 
 func c(j int) int {
-	return b(b(b(b(n))))
+	return b(b(b(b(j))))
 }
 
 func main() {
