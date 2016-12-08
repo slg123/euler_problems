@@ -14,7 +14,7 @@ func b(j int) int {
 	return a(a(a(a(a(j)))))
 }
 
-func c(n int) int {
+func c(j int) int {
 	return b(b(b(b(n))))
 }
 
