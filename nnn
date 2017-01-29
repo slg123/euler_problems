@@ -6,42 +6,45 @@ from sys import argv
 
 stock_listings = argv[1]
 
-def getStockData(stock):
+class StockData():
 
-    stock_names = []
-    timestamps = []
-    volume = [] 
-    price = []
+    def __init__(self):
+        self.stock_names = []
+        self.timestamps = []
+        self.volume = []
+        self.price = []
 
-    if stock == "names":
 
+    def get_names(self):
         with open(stock_listings, "r") as f:
             for line in f:
                 _, name, _, _ = line.strip().split(',')
-                stock_names.append(name)
+                self.stock_names.append(name)
 
-            return set(stock_names)
+        return set(self.stock_names)
 
+    
+    def get_data(self, stock):
 
-    with open(stock_listings) as csvfile:
-        csv_read = csv.reader(csvfile, delimiter=',')
-        for row in csv_read:
-            if stock in row:
-                timestamps.append(row[0])
-                volume.append(row[2])
-                price.append(row[3])
+        with open(stock_listings, "r") as f:
+            for line in f:
+                if stock in line:
+                    ts, _, vl, pr = line.strip().split(',')
 
+                    self.timestamps.append(ts)
+                    self.volume.append(vl)
+                    self.price.append(pr)
 
-        timestamps_list = map(int, timestamps)
+        timestamps_list = map(int, self.timestamps)
         gaps = [y-x for x,y in zip(timestamps_list, timestamps_list[1:])]
-        volume_list = map(int, volume)
-        price_list = map(int, price)
+        volume_list = map(int, self.volume)
+        price_list = map(int, self.price)
         weighted_avg = sum(x*y for x,y in zip(volume_list, price_list)) / sum(volume_list)
 
         return max(gaps), sum(volume_list), max(price_list), weighted_avg
-    
 
-for stock in getStockData('names'):
-    maxTimeGap, totalVolume, maxTradePrice, weightedAverage = getStockData(stock)
+ 
+for stock in StockData().get_names():
+    maxTimeGap, totalVolume, maxTradePrice, weightedAverage = StockData().get_data(stock)
     print stock + "," + str(maxTimeGap) + "," + str(totalVolume) + "," + str(weightedAverage) + "," + str(maxTradePrice)
 
