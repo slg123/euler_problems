@@ -1,0 +1,47 @@
+#!/usr/bin/python
+
+import csv
+import sys
+from sys import argv
+
+stock_listings = argv[1]
+
+def getStockData(stock):
+
+    stock_names = []
+    timestamps = []
+    volume = [] 
+    price = []
+
+    if stock == "names":
+
+        with open(stock_listings) as csvfile:
+            csv_read = csv.reader(csvfile, delimiter=',')
+            for row in csv_read:
+                stock_names.append(row[1])
+
+            return set(stock_names)
+
+
+    with open(stock_listings) as csvfile:
+        csv_read = csv.reader(csvfile, delimiter=',')
+        for row in csv_read:
+            if stock in row:
+                timestamps.append(row[0])
+                volume.append(row[2])
+                price.append(row[3])
+
+
+        timestamps_list = map(int, timestamps)
+        gaps = [y-x for x,y in zip(timestamps_list, timestamps_list[1:])]
+        volume_list = map(int, volume)
+        price_list = map(int, price)
+        weighted_avg = sum(x*y for x,y in zip(volume_list, price_list)) / sum(volume_list)
+
+        return max(gaps), sum(volume_list), max(price_list), weighted_avg
+    
+
+for stock in getStockData('names'):
+    maxTimeGap, totalVolume, maxTradePrice, weightedAverage = getStockData(stock)
+    print stock + "," + str(maxTimeGap) + "," + str(totalVolume) + "," + str(weightedAverage) + "," + str(maxTradePrice)
+
