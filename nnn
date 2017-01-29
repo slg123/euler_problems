@@ -24,7 +24,6 @@ class StockData():
 
     
     def get_data(self, stock):
-
         with open(stock_listings, "r") as f:
             for line in f:
                 if stock in line:
