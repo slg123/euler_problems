@@ -18,6 +18,7 @@ class StockData():
         with open(stock_listings, "r") as f:
             for line in f:
                 _, name, _, _ = line.strip().split(',')
+
                 self.stock_names.append(name)
 
         return set(self.stock_names)
