@@ -5,7 +5,7 @@ from sys import argv
 
 stock_listings = argv[1]
 
-class StockData():
+class Stock():
 
     def __init__(self):
         self.stock_names = []
@@ -43,7 +43,7 @@ class StockData():
         return max(gaps), sum(volume_list), max(price_list), weighted_avg
 
  
-for stock in StockData().get_names():
-    maxTimeGap, totalVolume, maxTradePrice, weightedAverage = StockData().get_data(stock)
+for stock in Stock().get_names():
+    maxTimeGap, totalVolume, maxTradePrice, weightedAverage = Stock().get_data(stock)
     print stock + "," + str(maxTimeGap) + "," + str(totalVolume) + "," + str(weightedAverage) + "," + str(maxTradePrice)
 
