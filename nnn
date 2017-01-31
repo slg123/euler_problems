@@ -17,7 +17,7 @@ class Stock():
     def get_names(self):
         with open(stock_listings, "r") as f:
             for line in f:
-                _, name, _, _ = line.strip().split(',')
+                name = line.strip().split(',')[1]
 
                 self.stock_names.append(name)
 
@@ -28,11 +28,12 @@ class Stock():
         with open(stock_listings, "r") as f:
             for line in f:
                 if stock in line:
-                    ts, _, vl, pr = line.strip().split(',')
+                    """ t - timestamp, v - volume, p - price """
+                    t, _, v, p = line.strip().split(',')
 
-                    self.timestamps.append(ts)
-                    self.volume.append(vl)
-                    self.price.append(pr)
+                    self.timestamps.append(t)
+                    self.volume.append(v)
+                    self.price.append(p)
 
         timestamps_list = map(int, self.timestamps)
         gaps = [y-x for x,y in zip(timestamps_list, timestamps_list[1:])]
