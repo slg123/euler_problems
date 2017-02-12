@@ -1,0 +1,50 @@
+#!/usr/bin/python
+
+import csv
+import sys
+from sys import argv
+
+stock_listings = argv[1]
+
+class StockData():
+
+    def __init__(self):
+        self.stock_names = []
+        self.timestamps = []
+        self.volume = []
+        self.price = []
+
+
+    def get_names(self):
+        with open(stock_listings, "r") as f:
+            for line in f:
+                name = line.strip().split(',')[1]
+                self.stock_names.append(name)
+
+        return set(self.stock_names)
+
+    
+    def get_data(self, stock):
+
+        with open(stock_listings, "r") as f:
+            for line in f:
+                if stock in line:
+                    ts, _, vl, pr = line.strip().split(',')
+
+                    self.timestamps.append(ts)
+                    self.volume.append(vl)
+                    self.price.append(pr)
+
+        timestamps_list = map(int, self.timestamps)
+        gaps = [y-x for x,y in zip(timestamps_list, timestamps_list[1:])]
+        volume_list = map(int, self.volume)
+        price_list = map(int, self.price)
+        weighted_avg = sum(x*y for x,y in zip(volume_list, price_list)) / sum(volume_list)
+
+        return max(gaps), sum(volume_list), max(price_list), weighted_avg
+
+ 
+for stock in StockData().get_names():
+    maxTimeGap, totalVolume, maxTradePrice, weightedAverage = StockData().get_data(stock)
+    print stock + "," + str(maxTimeGap) + "," + str(totalVolume) + "," + str(weightedAverage) + "," + str(maxTradePrice)
+
