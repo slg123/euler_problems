@@ -5,7 +5,7 @@ int isPrime(int);
 
 int main() {
 
-    const int MAX = 1000000;
+    const int MAX = 10000000;
 
     int *primes = malloc(MAX*sizeof(int)); 
     
