@@ -18,6 +18,7 @@ sub initialize_board {
     }
 }
 
+
 sub print_board {
     for (my $i=0; $i<$N; $i++) {
         for (my $j=0; $j<$N; $j++) {
@@ -29,13 +30,17 @@ sub print_board {
     }
 }
 
+
 sub can_move {
     my $x = shift;
     my $y = shift;
+
     return ($x>=0 && $x<$N && $y>=0 && $y<$N && $board[$x][$y] == -1); 
 }
 
+
 sub walk_board {
+
     my $x = shift;
     my $y = shift;
     my $m = shift;
@@ -48,11 +53,14 @@ sub walk_board {
     }
 
     for (my $i=0; $i<$N; $i++) {
+
         $next_x = $x + $xm[$i];
         $next_y = $y + $ym[$i];
 
         if (can_move($next_x, $next_y)) {
+
             $board[$next_x][$next_y] = $m;
+
             if (walk_board($next_x, $next_y, $m+1) == 1) {
                 return 1;
             } else {
@@ -60,8 +68,10 @@ sub walk_board {
             }
         }
     }
+
     return 0;
 }
+
 
 sub main {
     initialize_board();
