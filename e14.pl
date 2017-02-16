@@ -7,7 +7,9 @@ my $final = 0;
 my $tmp = 0; 
 my $len = 0; 
 
-for ( my $i = 1; $i <= 1000000; $i++ ) {
+my ($i, $j) = @ARGV;
+
+for ( my $i = $ARGV[0]; $i <= $ARGV[1]; $i++ ) {
     $len = get_collatz_chain($i); 
     if ( $len > $tmp ) {
         $tmp = $len; 
@@ -31,6 +33,7 @@ sub get_collatz_chain {
     }
     push @chain_nodes, 1;
     my $length = $#chain_nodes; 
+    print $length, "\n"; 
     return $length; 
 }
 
