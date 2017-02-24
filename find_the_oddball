@@ -17,8 +17,6 @@ for my $n (@a) {
     }
 }
 
-my %lookup = map { $_ => undef } @a; 
-
 sub get_num {
     my $n = shift;
     my $count = 0;
