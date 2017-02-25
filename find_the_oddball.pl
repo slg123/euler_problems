@@ -4,7 +4,7 @@
 # Each number but one appears an even number of times. 
 # Identify the number that appears an odd number of times. 
 
-my @a = ( 10, 10, 20, 20, 30, 30, 30, 10, 10, 9, 9, 8, 8, 7, 7, 6, 6 ); 
+my @a = ( 10, 10, 20, 20, 30, 30, 30, 10, 10, 9, 9, 8, 8, 7, 7, 6, 6, 4, 4, 4 ); 
 
 my @unique;
 
@@ -29,12 +29,15 @@ sub get_num {
     return $count;
 }
 
-my $wanted; 
+my @wanted; 
 for (@unique) {
     my $n = get_num($_);
     if ($n % 2 != 0) {
-        $wanted = $_; 
+        #$wanted = $_; 
+	push @wanted, $_;
     }
 }
 
-print $wanted, "\n"; 
+for (@wanted) {
+    print $_, "\n"; 
+}
