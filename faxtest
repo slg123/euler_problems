@@ -1,0 +1,26 @@
+#!/usr/bin/python
+
+from interfax import InterFAX
+import time
+
+def get_passwd():
+    credentials = {}
+    with open('.pw','r') as f:
+        for line in f:
+	    user, pw = line.strip().split(':')
+
+    return user, pw
+
+(user,pw) = get_passwd()
+
+interfax = InterFAX(username=user, password=pw)
+fax = interfax.deliver(fax_number="+18325381601", files=["hexagon.pdf"])
+fax = fax.reload() # resync with API to get latest status
+
+while fax.status != 0:
+    print fax.status # Success if 0. Pending if < 0. Error if > 0
+    time.sleep(60)
+
+print "Fax Success!" + fax.status
+
+
