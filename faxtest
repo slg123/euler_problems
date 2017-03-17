@@ -18,9 +18,10 @@ interfax = InterFAX(username=user, password=pw)
 fax = interfax.deliver(fax_number="+18325381601", files=["hexagon.pdf"])
 fax = fax.reload() # resync with API to get latest status
 
+tries = 0
 while fax.status != 0:
     print "connecting as: " + user
-    print fax.status # Success if 0. Pending if < 0. Error if > 0
+    #print fax.status # Success if 0. Pending if < 0. Error if > 0
 
     if fax.status < 0:
         print "pending..."
@@ -32,6 +33,12 @@ while fax.status != 0:
     if fax.status == 0:
         print "Success."
 	sys.exit(0)
+
+    if tries > 20:
+        print "Too many attempts. Exiting."
+	sys.exit(-99)
+
+    tries += 1
 
     time.sleep(60)
 
